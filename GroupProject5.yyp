@@ -8,7 +8,6 @@
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":1,},
     {"id":{"name":"spr_zone4","path":"sprites/spr_zone4/spr_zone4.yy",},"order":3,},
     {"id":{"name":"obj_zone5","path":"objects/obj_zone5/obj_zone5.yy",},"order":4,},
-    {"id":{"name":"spr_background1_1","path":"sprites/spr_background1_1/spr_background1_1.yy",},"order":11,},
     {"id":{"name":"obj_zone3","path":"objects/obj_zone3/obj_zone3.yy",},"order":2,},
     {"id":{"name":"spr_background1","path":"sprites/spr_background1/spr_background1.yy",},"order":5,},
     {"id":{"name":"spr_nukeZone","path":"sprites/spr_nukeZone/spr_nukeZone.yy",},"order":0,},
