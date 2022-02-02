@@ -8,7 +8,6 @@ if(!selected){
 else{
 	draw_self();
 	draw_set_font(fnt_endor);
-	draw_set_color(c_black);
-	draw_text(x,bbox_bottom+30,"Card Store");
+	draw_text_outlined(x,bbox_bottom+30,3,make_color_rgb(3,151,225),make_color_rgb(94,248,196),"Card Store");
 	draw_set_font(-1);
 }

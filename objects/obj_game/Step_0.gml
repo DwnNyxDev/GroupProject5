@@ -26,6 +26,7 @@ else if(room=rm_menu){
 			for(i=0; i<ds_list_size(menus); i++){
 				ds_list_find_value(menus,i).x+=increment;
 			}
+			
 		}
 		else if(selected_menu.x!=room_width/2){
 			increment = room_width/2-selected_menu.x;
@@ -33,6 +34,21 @@ else if(room=rm_menu){
 				ds_list_find_value(menus,i).x+=increment;
 			}
 		}
+		
+		funcX = selected_menu.x/(room_width/2);
+		blackground.image_alpha = (.5)*cos((2*pi*funcX)+pi)+.5;
+		if(blackground.image_alpha>.95){
+			if(selected_menu.menu_type="deck"){
+				obj_background.sprite_index=spr_deck_menu_bg;
+			}
+			else if(selected_menu.menu_type="store"){
+				obj_background.sprite_index=spr_store_menu_bg;
+			}
+			else if(selected_menu.menu_type="battle"){
+				obj_background.sprite_index=spr_battle_menu_bg;
+			}
+		}
+		
 	}
 	
 }

@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-selected=false;
-menu_type = "deck";
+card_list = ds_list_create();
+card_types = ds_list_create();

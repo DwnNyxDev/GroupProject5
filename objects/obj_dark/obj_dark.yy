@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_deck_icon",
-    "path": "sprites/spr_deck_icon/spr_deck_icon.yy",
+    "name": "spr_black",
+    "path": "sprites/spr_black/spr_black.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,7 +23,6 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -32,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_deck_btn",
+  "name": "obj_dark",
   "tags": [],
   "resourceType": "GMObject",
 }
