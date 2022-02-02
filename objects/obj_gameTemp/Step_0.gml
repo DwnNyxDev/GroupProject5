@@ -3,3 +3,9 @@ if(room == rm_start){
 		room = rm_battleground;
 	}
 }
+if(keyboard_check_pressed(vk_space)){
+	global.phase++;
+}
+if(global.phase >= 5){
+	global.phase = 0;
+}

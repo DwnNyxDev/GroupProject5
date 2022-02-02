@@ -1,8 +1,4 @@
-if(global.phase==2){
-	if(moves>0){
-		
-	}
-}
-else if(global.phase==3){
-	
+if(global.phase == 1){
+	home = instance_nearest(x,y,obj_space);
+	moves = 1;
 }
