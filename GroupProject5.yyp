@@ -1,9 +1,11 @@
 {
   "resources": [
     {"id":{"name":"spr_lowKnight_walk","path":"sprites/spr_lowKnight_walk/spr_lowKnight_walk.yy",},"order":32,},
+    {"id":{"name":"spr_highKnight","path":"sprites/spr_highKnight/spr_highKnight.yy",},"order":37,},
     {"id":{"name":"spr_robinhood","path":"sprites/spr_robinhood/spr_robinhood.yy",},"order":22,},
     {"id":{"name":"spr_zone5","path":"sprites/spr_zone5/spr_zone5.yy",},"order":4,},
-    {"id":{"name":"spr_highKnight","path":"sprites/spr_highKnight/spr_highKnight.yy",},"order":16,},
+    {"id":{"name":"spr_highKnight_spear","path":"sprites/spr_highKnight_spear/spr_highKnight_spear.yy",},"order":16,},
+    {"id":{"name":"spr_lowKnight_death","path":"sprites/spr_lowKnight_death/spr_lowKnight_death.yy",},"order":39,},
     {"id":{"name":"obj_nukeZone","path":"objects/obj_nukeZone/obj_nukeZone.yy",},"order":0,},
     {"id":{"name":"rm_battleground","path":"rooms/rm_battleground/rm_battleground.yy",},"order":2,},
     {"id":{"name":"spr_babybowman","path":"sprites/spr_babybowman/spr_babybowman.yy",},"order":14,},
@@ -27,6 +29,7 @@
     {"id":{"name":"spr_humanSpell","path":"sprites/spr_humanSpell/spr_humanSpell.yy",},"order":29,},
     {"id":{"name":"spr_midKnight_walk","path":"sprites/spr_midKnight_walk/spr_midKnight_walk.yy",},"order":13,},
     {"id":{"name":"spr_scout_spear","path":"sprites/spr_scout_spear/spr_scout_spear.yy",},"order":36,},
+    {"id":{"name":"spr_lowKnight_spear","path":"sprites/spr_lowKnight_spear/spr_lowKnight_spear.yy",},"order":38,},
     {"id":{"name":"obj_zone3","path":"objects/obj_zone3/obj_zone3.yy",},"order":2,},
     {"id":{"name":"spr_midKnight","path":"sprites/spr_midKnight/spr_midKnight.yy",},"order":12,},
     {"id":{"name":"spr_skelly","path":"sprites/spr_skelly/spr_skelly.yy",},"order":20,},
