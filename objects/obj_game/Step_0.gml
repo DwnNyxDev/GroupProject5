@@ -52,6 +52,7 @@ else if(room=rm_menu){
 			}
 			else if(selected_menu.menu_type="store"){
 				obj_background.sprite_index=spr_store_menu_bg;
+				audio_play_sound(sfx_shop_open,0,false);
 			}
 			else if(selected_menu.menu_type="battle"){
 				obj_background.sprite_index=spr_battle_menu_bg;
