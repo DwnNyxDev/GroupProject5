@@ -21,7 +21,6 @@
     {"id":{"name":"spr_soldier1","path":"sprites/spr_soldier1/spr_soldier1.yy",},"order":6,},
     {"id":{"name":"spr_background1","path":"sprites/spr_background1/spr_background1.yy",},"order":5,},
     {"id":{"name":"spr_beast_blank","path":"sprites/spr_beast_blank/spr_beast_blank.yy",},"order":11,},
-    {"id":{"name":"obj_gameTemp","path":"objects/obj_gameTemp/obj_gameTemp.yy",},"order":5,},
     {"id":{"name":"spr_nukeZone","path":"sprites/spr_nukeZone/spr_nukeZone.yy",},"order":0,},
     {"id":{"name":"obj_zone4","path":"objects/obj_zone4/obj_zone4.yy",},"order":3,},
     {"id":{"name":"spr_lowKnight_walk","path":"sprites/spr_lowKnight_walk/spr_lowKnight_walk.yy",},"order":34,},
