@@ -1,5 +1,14 @@
-/// @description Insert description here
-// You can write your code in this editor
+if(room == rm_start){
+	if(keyboard_check(vk_space)){
+		room = rm_battleground;
+	}
+}
+if(keyboard_check_pressed(vk_space)){
+	global.phase++;
+}
+if(global.phase >= 5){
+	global.phase = 0;
+}
 if(room=rm_start&&keyboard_check_pressed(vk_enter)){
 	room_goto(rm_menu);
 }
