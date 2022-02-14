@@ -1,5 +1,14 @@
-/// @description Insert description here
-// You can write your code in this editor
+if(room == rm_start){
+	if(keyboard_check(vk_space)){
+		room = rm_battleground;
+	}
+}
+if(keyboard_check_pressed(vk_space)){
+	global.phase++;
+}
+if(global.phase >= 5){
+	global.phase = 0;
+}
 if(room=rm_start&&keyboard_check_pressed(vk_enter)){
 	room_goto(rm_menu);
 }
@@ -43,6 +52,7 @@ else if(room=rm_menu){
 			}
 			else if(selected_menu.menu_type="store"){
 				obj_background.sprite_index=spr_store_menu_bg;
+				audio_play_sound(sfx_shop_open,0,false);
 			}
 			else if(selected_menu.menu_type="battle"){
 				obj_background.sprite_index=spr_battle_menu_bg;
