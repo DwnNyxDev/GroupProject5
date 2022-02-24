@@ -6,7 +6,7 @@
     {"id":{"name":"spr_bigGob_death","path":"sprites/spr_bigGob_death/spr_bigGob_death.yy",},"order":44,},
     {"id":{"name":"obj_nukeZone","path":"objects/obj_nukeZone/obj_nukeZone.yy",},"order":0,},
     {"id":{"name":"spr_scoutCard","path":"sprites/spr_scoutCard/spr_scoutCard.yy",},"order":7,},
-    {"id":{"name":"rm_battleground","path":"rooms/rm_battleground/rm_battleground.yy",},"order":2,},f
+    {"id":{"name":"rm_battleground","path":"rooms/rm_battleground/rm_battleground.yy",},"order":2,},
     {"id":{"name":"spr_zombie_death","path":"sprites/spr_zombie_death/spr_zombie_death.yy",},"order":64,},
     {"id":{"name":"sfx_startScreen","path":"sounds/sfx_startScreen/sfx_startScreen.yy",},"order":0,},
     {"id":{"name":"obj_zone2","path":"objects/obj_zone2/obj_zone2.yy",},"order":1,},
@@ -29,7 +29,6 @@
     {"id":{"name":"spr_background1","path":"sprites/spr_background1/spr_background1.yy",},"order":5,},
     {"id":{"name":"spr_goblin_shaman_idle","path":"sprites/spr_goblin_shaman_idle/spr_goblin_shaman_idle.yy",},"order":53,},
     {"id":{"name":"obj_btn","path":"objects/obj_btn/obj_btn.yy",},"order":17,},
-    {"id":{"name":"spr_soldier1","path":"sprites/spr_soldier1/spr_soldier1.yy",},"order":6,},
     {"id":{"name":"spr_beast_blank","path":"sprites/spr_beast_blank/spr_beast_blank.yy",},"order":11,},
     {"id":{"name":"spr_nukeZone","path":"sprites/spr_nukeZone/spr_nukeZone.yy",},"order":0,},
     {"id":{"name":"obj_zone4","path":"objects/obj_zone4/obj_zone4.yy",},"order":3,},
@@ -117,7 +116,7 @@
     {"id":{"name":"spr_deck_menu_bg","path":"sprites/spr_deck_menu_bg/spr_deck_menu_bg.yy",},"order":0,},
     {"id":{"name":"obj_battle_btn","path":"objects/obj_battle_btn/obj_battle_btn.yy",},"order":11,},
     {"id":{"name":"spr_kingGob","path":"sprites/spr_kingGob/spr_kingGob.yy",},"order":45,},
-    {"id":{"name":"spr_archerCard","path":"sprites/spr_archerCard/spr_archerCard.yy",},"order":8,},f
+    {"id":{"name":"spr_archerCard","path":"sprites/spr_archerCard/spr_archerCard.yy",},"order":8,},
     {"id":{"name":"obj_dark","path":"objects/obj_dark/obj_dark.yy",},"order":7,},
     {"id":{"name":"spr_bellazona","path":"sprites/spr_bellazona/spr_bellazona.yy",},"order":13,},
     {"id":{"name":"obj_background","path":"objects/obj_background/obj_background.yy",},"order":13,},

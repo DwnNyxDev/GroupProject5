@@ -14,3 +14,4 @@ last_shop_reset = ini_read_real("Variables","last_shop_reset",0);
 card_display = ini_read_real("Variables","card_display",spr_babybowman);
 card_display2 = ini_read_real("Variables","card_display",spr_babyspear);
 ini_close()
+decks_created = ds_list_create();
