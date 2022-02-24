@@ -2,6 +2,7 @@
 // You can write your code in this editor
 if(room=rm_start){
 	audio_play_sound(sfx_startScreen,0,true);
+	instance_create_layer(room_width/2,room_height/2,"Instances",obj_card);
 }
 else if(room=rm_menu){
 	audio_stop_all();
@@ -22,16 +23,11 @@ else if(room=rm_deck_editor){
 	back_btn.btn_type = "back_room";
 	back_btn.outline_color = c_black;
 	back_btn.fill_color = c_aqua;
-<<<<<<< Updated upstream
-	if(ds_list_size(deck_list)==0){
-		instance_create_layer(room_width/2,room_height/2,"Instances",obj_select_deck_btn);
-=======
 	ds_list_clear(decks_created);
 	if(ds_list_size(global.deck_list)==0){
 		ds_list_add(decks_created,instance_create_layer(room_width/2,room_height/2,"Instances",obj_create_deck_btn));
->>>>>>> Stashed changes
 	}
-	else if(ds_list_size(deck_list)%2!=0){
+	else if(ds_list_size(global.deck_list)%2!=0){
 		//288
 	}
 }
