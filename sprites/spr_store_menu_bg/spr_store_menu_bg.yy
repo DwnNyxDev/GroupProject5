@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "menu_bgs",
-    "path": "folders/Sprites/menu_bgs.yy",
+    "path": "folders/Sounds/Sprites/menu_bgs.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_store_menu_bg",

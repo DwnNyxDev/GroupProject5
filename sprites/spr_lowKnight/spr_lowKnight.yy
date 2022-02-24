@@ -262,7 +262,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "path": "folders/Sounds/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_lowKnight",
