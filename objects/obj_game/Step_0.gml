@@ -62,6 +62,10 @@ else if(room=rm_menu){
 	}
 	
 }
+else if(room == rm_store){
+
+	
+}
 
 
 

@@ -25,6 +25,10 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"ac9d0cb8-2b39-48e2-a3bd-860c8f590c57","path":"sprites/spr_lowKnightCard/spr_lowKnightCard.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+<<<<<<< Updated upstream
+=======
+        {"FrameId":{"name":"ac9d0cb8-2b39-48e2-a3bd-860c8f590c57","path":"sprites/spr_lowKnightCard/spr_lowKnightCard.yy",},"LayerId":{"name":"ba7026b9-26ef-4747-acd5-ae4f7b02ea4f","path":"sprites/spr_lowKnightCard/spr_lowKnightCard.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+>>>>>>> Stashed changes
         {"FrameId":{"name":"ac9d0cb8-2b39-48e2-a3bd-860c8f590c57","path":"sprites/spr_lowKnightCard/spr_lowKnightCard.yy",},"LayerId":{"name":"0b9a1958-72e3-4f4e-8baa-738a733601ad","path":"sprites/spr_lowKnightCard/spr_lowKnightCard.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"ac9d0cb8-2b39-48e2-a3bd-860c8f590c57","path":"sprites/spr_lowKnightCard/spr_lowKnightCard.yy",},"LayerId":{"name":"ba7026b9-26ef-4747-acd5-ae4f7b02ea4f","path":"sprites/spr_lowKnightCard/spr_lowKnightCard.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_lowKnightCard","path":"sprites/spr_lowKnightCard/spr_lowKnightCard.yy",},"resourceVersion":"1.0","name":"ac9d0cb8-2b39-48e2-a3bd-860c8f590c57","tags":[],"resourceType":"GMSpriteFrame",},
@@ -72,7 +76,7 @@
   "nineSlice": null,
   "parent": {
     "name": "cards",
-    "path": "folders/Sprites/cards.yy",
+    "path": "folders/Sounds/Sprites/cards.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_lowKnightCard",
