@@ -29,3 +29,12 @@ else if(room=rm_deck_editor){
 		//288
 	}
 }
+else if(room=rm_store){
+	if(date_second_span(last_shop_reset,date_current_datetime())>=20){
+		card_display = choose(spr_archerCard, spr_scoutCard, spr_midKnightCard);
+		ini_open("saveData.ini")
+		ini_write_real("Variables","last_shop_reset",date_current_datetime());
+		ini_write_real("Variables","card_display",card_display);
+		ini_close();
+	}
+}

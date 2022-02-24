@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "cards",
-    "path": "folders/Sprites/cards.yy",
+    "path": "folders/Sounds/Sprites/cards.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_create_deck",

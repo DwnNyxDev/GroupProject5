@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "menu_icons",
-    "path": "folders/Sprites/menu_icons.yy",
+    "path": "folders/Sounds/Sprites/menu_icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_battle_icon",
