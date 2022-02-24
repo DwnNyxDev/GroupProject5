@@ -1,7 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
 card_race="human";
-card_type="soldier"
+card_type="soldier";
+card_sprite = spr_lowKnight;
+card_object = obj_lowKnight;
 card_attack=3;
 card_turn=3;
 card_health=3;
