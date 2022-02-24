@@ -2,7 +2,6 @@
 // You can write your code in this editor
 if(room=rm_start){
 	audio_play_sound(sfx_startScreen,0,true);
-	instance_create_layer(room_width/2,room_height/2,"Instances",obj_card);
 }
 else if(room=rm_menu){
 	audio_stop_all();
