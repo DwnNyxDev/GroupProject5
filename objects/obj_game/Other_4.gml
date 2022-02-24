@@ -29,12 +29,16 @@ else if(room=rm_deck_editor){
 	else{
 		for(i=0; i<ds_map_size(global.deck_map); i++){
 			deck_btn = instance_create_layer(room_width/2+288*i,room_height/2,"Instances",obj_select_deck_btn);
-			deck_btn.deck_name = "greta";
+			deck_btn.deck_name = "Dokkan";
 			ds_list_add(decks_created,deck_btn);
 		}
 	}
 }
 else if(room=rm_store){
+	back_btn = instance_create_layer(1180,132,"Instances",obj_btn);
+	back_btn.btn_type = "back_room";
+	back_btn.outline_color = c_black;
+	back_btn.fill_color = c_aqua;
 	if(date_second_span(last_shop_reset,date_current_datetime())>=20){
 		card_display = choose(spr_archerCard, spr_scoutCard, spr_midKnightCard);
 		ini_open("saveData.ini")
@@ -42,4 +46,10 @@ else if(room=rm_store){
 		ini_write_real("Variables","card_display",card_display);
 		ini_close();
 	}
+}
+else if(room=rm_battleground){
+	back_btn = instance_create_layer(1180,132,"Instances",obj_btn);
+	back_btn.btn_type = "back_room";
+	back_btn.outline_color = c_black;
+	back_btn.fill_color = c_aqua;
 }
