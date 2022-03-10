@@ -5,9 +5,13 @@ if(room == rm_start){
 }
 if(keyboard_check_pressed(vk_space)){
 	global.phase++;
+	if(global.phase==0){
+		global.money += newMoney;
+	}
 }
 if(global.phase >= 5){
 	global.phase = 0;
+	totalTurns ++;
 }
 if(room=rm_start&&keyboard_check_pressed(vk_enter)){
 	room_goto(rm_menu);
@@ -62,8 +66,6 @@ else if(room=rm_menu){
 	}
 	
 }
-<<<<<<< Updated upstream
-=======
 else if(room == rm_store){
 
 	
@@ -98,8 +100,3 @@ else if(room == rm_deck_editor){
 		ds_list_add(deck_editor_card_groups,"Human Mid Knight")
 	}
 }
->>>>>>> Stashed changes
-
-
-
-

@@ -2,7 +2,6 @@
 // You can write your code in this editor
 if(room=rm_start){
 	audio_play_sound(sfx_startScreen,0,true);
-	instance_create_layer(room_width/2,room_height/2,"Instances",obj_card);
 }
 else if(room=rm_menu){
 	audio_stop_all();
@@ -28,22 +27,14 @@ else if(room=rm_deck_selector){
 		ds_list_add(decks_created,instance_create_layer(room_width/2,room_height/2,"Instances",obj_create_deck_btn));
 	}
 	else{
-<<<<<<< Updated upstream
-		for(i=0; i<ds_map_size(global.deck_map); i++){
-			deck_btn = instance_create_layer(room_width/2+288*i,room_height/2,"Instances",obj_select_deck_btn);
-			deck_btn.deck_name = "greta";
-=======
 		for(i=0; i<ds_list_size(global.deck_list); i++){
 			deck_map = ds_list_find_value(global.deck_list,i);
 			deck_btn = instance_create_layer(288+288*i,room_height/2,"Instances",obj_select_deck_btn);
 			deck_btn.deck_map = deck_map;
->>>>>>> Stashed changes
 			ds_list_add(decks_created,deck_btn);
 		}
 		ds_list_add(decks_created,instance_create_layer(288+288*ds_list_size(global.deck_list),room_height/2,"Instances",obj_create_deck_btn));
 	}
-<<<<<<< Updated upstream
-=======
 }
 else if(room=rm_deck_editor){
 	back_btn = instance_create_layer(room_width*.95,room_height*.05,"Instances",obj_btn);
@@ -72,5 +63,4 @@ else if(room=rm_battleground){
 	back_btn.btn_type = "back_room";
 	back_btn.outline_color = c_black;
 	back_btn.fill_color = c_aqua;
->>>>>>> Stashed changes
 }

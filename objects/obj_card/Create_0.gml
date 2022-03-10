@@ -1,9 +1,11 @@
-/// @description Insert description here
-// You can write your code in this editor
 card_race="human";
-card_type="soldier"
+card_type="soldier";
+card_sprite = spr_lowKnightIdle;
 card_attack=3;
 card_turn=3;
 card_health=3;
 card_name = "Low Knight"
 card_cost = 1;
+card_physical = noone;
+startY = y;
+moving = false;
