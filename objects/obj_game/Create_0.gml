@@ -4,7 +4,7 @@ menu_selected_index = -1;
 global.deck_map = ds_map_create();
 global.card_inventory = ds_list_create();
 selected_deck=noone;
-global.money = 0;
+global.money = 10;
 newMoney = 1;
 global.phase = 0;//0=start,1=discard,2=play,3=combat,4=end
 global.movingTroop = false;
