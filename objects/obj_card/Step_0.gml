@@ -1,3 +1,9 @@
+/// @description Insert description here
+// You can write your code in this editor
+if(room=rm_deck_editor){
+	image_xscale=.5;
+	image_yscale=.5;
+}
 draw_sprite(card_sprite,0,x,y);
 draw_text(200,200,mouse_y);
 if(moving){

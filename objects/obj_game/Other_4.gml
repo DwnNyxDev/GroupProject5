@@ -17,22 +17,33 @@ else if(room=rm_menu){
 	ds_list_add(menus,battle_btn);
 	menu_selected_index = ds_list_find_index(menus,deck_btn);
 }
-else if(room=rm_deck_editor){
+else if(room=rm_deck_selector){
 	back_btn = instance_create_layer(1180,132,"Instances",obj_btn);
 	back_btn.btn_type = "back_room";
 	back_btn.outline_color = c_black;
 	back_btn.fill_color = c_aqua;
 	ds_list_clear(decks_created);
-	if(ds_map_size(global.deck_map)==0){
+	if(ds_list_size(global.deck_list)==0){
 		ds_list_add(decks_created,instance_create_layer(room_width/2,room_height/2,"Instances",obj_create_deck_btn));
 	}
 	else{
-		for(i=0; i<ds_map_size(global.deck_map); i++){
-			deck_btn = instance_create_layer(room_width/2+288*i,room_height/2,"Instances",obj_select_deck_btn);
-			deck_btn.deck_name = "Dokkan";
+		for(i=0; i<ds_list_size(global.deck_list); i++){
+			deck_map = ds_list_find_value(global.deck_list,i);
+			deck_btn = instance_create_layer(288+288*i,room_height/2,"Instances",obj_select_deck_btn);
+			deck_btn.deck_map = deck_map;
 			ds_list_add(decks_created,deck_btn);
 		}
+		ds_list_add(decks_created,instance_create_layer(288+288*ds_list_size(global.deck_list),room_height/2,"Instances",obj_create_deck_btn));
 	}
+}
+else if(room=rm_deck_editor){
+	back_btn = instance_create_layer(room_width*.95,room_height*.05,"Instances",obj_btn);
+	back_btn.btn_type = "back_room";
+	back_btn.outline_color = c_black;
+	back_btn.fill_color = c_aqua;
+	ds_list_clear(deck_editor_card_groups);
+	deck_editor_index=0;
+	instance_create_layer(room_width/2,room_height/2,"Preground",obj_deck_add);
 }
 else if(room=rm_store){
 	back_btn = instance_create_layer(1180,132,"Instances",obj_btn);
