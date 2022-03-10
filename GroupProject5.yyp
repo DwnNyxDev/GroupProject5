@@ -25,11 +25,19 @@
     {"id":{"name":"Sprite7879","path":"sprites/Sprite7879/Sprite7879.yy",},"order":72,},
     {"id":{"name":"spr_soldier1","path":"sprites/spr_soldier1/spr_soldier1.yy",},"order":6,},
     {"id":{"name":"spr_background1","path":"sprites/spr_background1/spr_background1.yy",},"order":5,},
+    {"id":{"name":"obj_held_cards","path":"objects/obj_held_cards/obj_held_cards.yy",},"order":20,},
     {"id":{"name":"spr_goblin_shaman_idle","path":"sprites/spr_goblin_shaman_idle/spr_goblin_shaman_idle.yy",},"order":53,},
     {"id":{"name":"obj_btn","path":"objects/obj_btn/obj_btn.yy",},"order":17,},
     {"id":{"name":"spr_beast_blank","path":"sprites/spr_beast_blank/spr_beast_blank.yy",},"order":11,},
     {"id":{"name":"spr_nukeZone","path":"sprites/spr_nukeZone/spr_nukeZone.yy",},"order":0,},
     {"id":{"name":"obj_zone4","path":"objects/obj_zone4/obj_zone4.yy",},"order":3,},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"rm_deck_selector","path":"rooms/rm_deck_selector/rm_deck_selector.yy",},"order":9,},
+    {"id":{"name":"obj_deck_add","path":"objects/obj_deck_add/obj_deck_add.yy",},"order":19,},
+    {"id":{"name":"split","path":"scripts/split/split.yy",},"order":2,},
+    {"id":{"name":"spr_goldCoin","path":"sprites/spr_goldCoin/spr_goldCoin.yy",},"order":74,},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_lowKnight_walk","path":"sprites/spr_lowKnight_walk/spr_lowKnight_walk.yy",},"order":34,},
     {"id":{"name":"spr_highKnight","path":"sprites/spr_highKnight/spr_highKnight.yy",},"order":39,},
     {"id":{"name":"spr_robinhood","path":"sprites/spr_robinhood/spr_robinhood.yy",},"order":25,},
@@ -62,6 +70,7 @@
     {"id":{"name":"obj_startBtn","path":"objects/obj_startBtn/obj_startBtn.yy",},"order":8,},
     {"id":{"name":"spr_kingGob_attack1","path":"sprites/spr_kingGob_attack1/spr_kingGob_attack1.yy",},"order":47,},
     {"id":{"name":"spr_beast_card_back","path":"sprites/spr_beast_card_back/spr_beast_card_back.yy",},"order":7,},
+    {"id":{"name":"spr_deck_add","path":"sprites/spr_deck_add/spr_deck_add.yy",},"order":75,},
     {"id":{"name":"spr_deck_menu","path":"sprites/spr_deck_menu/spr_deck_menu.yy",},"order":23,},
     {"id":{"name":"spr_mutant_zombie_death","path":"sprites/spr_mutant_zombie_death/spr_mutant_zombie_death.yy",},"order":69,},
     {"id":{"name":"spr_goblin_sword","path":"sprites/spr_goblin_sword/spr_goblin_sword.yy",},"order":41,},
@@ -83,6 +92,7 @@
     {"id":{"name":"spr_skeleton_card_back","path":"sprites/spr_skeleton_card_back/spr_skeleton_card_back.yy",},"order":3,},
     {"id":{"name":"spr_skelly_walk","path":"sprites/spr_skelly_walk/spr_skelly_walk.yy",},"order":21,},
     {"id":{"name":"spr_mutant_zombie_idle","path":"sprites/spr_mutant_zombie_idle/spr_mutant_zombie_idle.yy",},"order":66,},
+    {"id":{"name":"obj_deck_editor_card","path":"objects/obj_deck_editor_card/obj_deck_editor_card.yy",},"order":18,},
     {"id":{"name":"spr_zombie_card_back","path":"sprites/spr_zombie_card_back/spr_zombie_card_back.yy",},"order":5,},
     {"id":{"name":"spr_kingGob_attack2","path":"sprites/spr_kingGob_attack2/spr_kingGob_attack2.yy",},"order":50,},
     {"id":{"name":"spr_zombie_attack","path":"sprites/spr_zombie_attack/spr_zombie_attack.yy",},"order":61,},
@@ -91,6 +101,7 @@
     {"id":{"name":"spr_humanSpell","path":"sprites/spr_humanSpell/spr_humanSpell.yy",},"order":29,},
     {"id":{"name":"spr_kingGob_walk","path":"sprites/spr_kingGob_walk/spr_kingGob_walk.yy",},"order":46,},
     {"id":{"name":"spr_midKnight_walk","path":"sprites/spr_midKnight_walk/spr_midKnight_walk.yy",},"order":13,},
+    {"id":{"name":"Script4","path":"scripts/Script4/Script4.yy",},"order":3,},
     {"id":{"name":"spr_bigGob_idle","path":"sprites/spr_bigGob_idle/spr_bigGob_idle.yy",},"order":42,},
     {"id":{"name":"spr_scout_spear","path":"sprites/spr_scout_spear/spr_scout_spear.yy",},"order":36,},
     {"id":{"name":"save_game","path":"scripts/save_game/save_game.yy",},"order":1,},
@@ -114,6 +125,7 @@
     {"id":{"name":"obj_battle_btn","path":"objects/obj_battle_btn/obj_battle_btn.yy",},"order":11,},
     {"id":{"name":"spr_kingGob","path":"sprites/spr_kingGob/spr_kingGob.yy",},"order":45,},
     {"id":{"name":"spr_archerCard","path":"sprites/spr_archerCard/spr_archerCard.yy",},"order":8,},
+    {"id":{"name":"fnt_arial20","path":"fonts/fnt_arial20/fnt_arial20.yy",},"order":2,},
     {"id":{"name":"obj_dark","path":"objects/obj_dark/obj_dark.yy",},"order":7,},
     {"id":{"name":"spr_bellazona","path":"sprites/spr_bellazona/spr_bellazona.yy",},"order":13,},
     {"id":{"name":"obj_background","path":"objects/obj_background/obj_background.yy",},"order":13,},
@@ -146,6 +158,11 @@
     {"roomId":{"name":"rm_battleground","path":"rooms/rm_battleground/rm_battleground.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_deck_editor","path":"rooms/rm_deck_editor/rm_deck_editor.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"roomId":{"name":"rm_store","path":"rooms/rm_store/rm_store.yy",},},
+    {"roomId":{"name":"rm_deck_selector","path":"rooms/rm_deck_selector/rm_deck_selector.yy",},},
+>>>>>>> Stashed changes
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

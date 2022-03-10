@@ -4,6 +4,10 @@ function save_game(){
 	file_delete("saveData.ini");	
 	ini_open("saveData.ini");
 	ini_write_string("Variables","card_inventory",ds_list_write(global.card_inventory));
-	ini_write_string("Variables","deck_map",ds_map_write(global.deck_map));
+	ini_write_real("Variables","num_decks",ds_list_size(global.deck_list));
+	for(i=0;i<ds_list_size(global.deck_list);i++){
+		deck_map = ds_list_find_value(global.deck_list,i);
+		ini_write_string("Decks",string(i),ds_map_find_value(deck_map,"name")+","+ds_list_write(ds_map_find_value(deck_map,"card_list")));
+	}
 	ini_close();
 }
