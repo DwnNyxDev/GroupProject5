@@ -11,13 +11,12 @@ newMoney = 1;
 global.phase = 0;//0=start,1=discard,2=play,3=combat,4=end
 global.movingTroop = false;
 totalTurns = 0;
-curr_room=rm_start;
-prev_room=rm_start;
-global.gold = 0;
+global.gold = 60000;
 ini_open("saveData.ini");
 last_shop_reset = ini_read_real("Variables","last_shop_reset",0);
 card_display = ini_read_real("Variables","card_display",spr_babybowman);
-card_display2 = ini_read_real("Variables","card_display",spr_babyspear);
+card_display2 = ini_read_real("Variables","card_display2",spr_babyspear);
+card_display3 = ini_read_real("Variables", "card_display3", spr_goblin_sword);
 
 num_decks = ini_read_string("Variables","num_decks",0)
 card_inv_string = ini_read_string("Variables","card_inventory","none");
@@ -40,7 +39,7 @@ if(num_decks>0){
 		}
 	}
 }
-ini_close()
+ini_close();
 decks_created = ds_list_create();
 deck_selector_xOffset = 0;
 deck_editor_index=0;
