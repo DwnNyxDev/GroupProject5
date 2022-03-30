@@ -64,3 +64,13 @@ else if(room=rm_battleground){
 	back_btn.outline_color = c_black;
 	back_btn.fill_color = c_aqua;
 }
+else if(room=rm_pvp_setup){
+	back_btn = instance_create_layer(1180,132,"Instances",obj_btn);
+	back_btn.btn_type = "back_room";
+	back_btn.outline_color = c_black;
+	back_btn.fill_color = c_aqua;
+	create_btn = instance_create_layer(room_width*.25,room_height*.5,"Instances",obj_pvp_btn);
+	create_btn.btn_type="create";
+	join_btn = instance_create_layer(room_width*.75,room_height*.5,"Instances",obj_pvp_btn);
+	join_btn.btn_type="join";
+}
