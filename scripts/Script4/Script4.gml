@@ -17,6 +17,15 @@ function get_sprite_from_card_name(card_name,sprite_type){
 		else if(card_name="Skeleton Mid Knight"){
 			return spr_skeleton_midKnightCard
 		}
+		else if(card_name = "Mutant Zombie"){
+			return spr_mutant_zombie_card
+		}
+		else if(card_name = "Zombie"){
+			return spr_zombie_card
+		}
+		else if(card_name = "Rogue Zombie"){
+			return spr_rogue_zombie_card
+		}
 	}
 	else if(sprite_type=="soldier"){
 		if(card_name="Human High Knight"){
