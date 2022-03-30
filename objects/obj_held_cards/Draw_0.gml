@@ -9,6 +9,6 @@ if(ds_list_size(card_list)<3){
 }
 else{
 */
-	draw_sprite_ext(spr_human_blank,0,mouse_x,mouse_y,.5,.5,0,c_white,.75);
+	draw_sprite_ext(spr_humanCard_blank,0,mouse_x,mouse_y,.5,.5,0,c_white,.75);
 	draw_text(mouse_x,mouse_y,ds_list_size(card_list));
 //}

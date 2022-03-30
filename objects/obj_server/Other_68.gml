@@ -10,6 +10,14 @@ if(e_type = network_type_connect){
 	new_client = ds_map_create();
 	ds_map_add(new_client,"socket",e_socket);
 	ds_list_add(client_list,new_client);
+	if(ds_list_size(client_list)==2){
+		var buffer = buffer_create(256,buffer_grow,1);
+		buffer_seek(buffer,buffer_seek_start,0);
+		buffer_write(buffer,buffer_string,"send_deck");
+		for(i=0;i<ds_list_size(client_list);i++){
+			network_send_packet(ds_map_find_value(ds_list_find_value(client_list,i),"socket"),buffer,buffer_tell(buffer));
+		}	
+	}
 }
 else if(e_type = network_type_data){
 	var read_buffer = ds_map_find_value(async_load,"buffer");
@@ -20,6 +28,7 @@ else if(e_type = network_type_data){
 			client_map = ds_list_find_value(client_list,i);
 			client_socket = ds_map_find_value(client_map,"socket");
 			if(client_socket!=e_socket){
+				show_debug_message("enemy");
 				var buffer = buffer_create(256,buffer_grow,1);
 				buffer_seek(buffer,buffer_seek_start,0);
 				buffer_write(buffer,buffer_string,"enemy_deck");
