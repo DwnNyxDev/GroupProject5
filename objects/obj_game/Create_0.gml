@@ -13,15 +13,12 @@ global.movingTroop = false;
 totalTurns = 0;
 curr_room=rm_start;
 prev_room=rm_start;
-<<<<<<< Updated upstream
-global.gold = 0;
-=======
-global.gold = 6000;
->>>>>>> Stashed changes
+global.gold = 60000;
 ini_open("saveData.ini");
 last_shop_reset = ini_read_real("Variables","last_shop_reset",0);
 card_display = ini_read_real("Variables","card_display",spr_babybowman);
-card_display2 = ini_read_real("Variables","card_display",spr_babyspear);
+card_display2 = ini_read_real("Variables","card_display2",spr_babyspear);
+card_display3 = ini_read_real("Variables", "card_display3", spr_goblin_sword);
 
 num_decks = ini_read_string("Variables","num_decks",0)
 card_inv_string = ini_read_string("Variables","card_inventory","none");
@@ -44,12 +41,9 @@ if(num_decks>0){
 		}
 	}
 }
-<<<<<<< Updated upstream
-=======
 if(num_decks==1){
 	global.selected_deck=ds_list_find_value(global.deck_list,0);
 }
->>>>>>> Stashed changes
 ini_close()
 decks_created = ds_list_create();
 deck_selector_xOffset = 0;
