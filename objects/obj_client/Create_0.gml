@@ -5,5 +5,5 @@ client_socket=network_create_socket(network_socket_tcp);
 network_set_config(network_config_connect_timeout,1000);
 server_ip=noone;
 connected=false;
-//alarm[0]=room_speed*5;
+c_type=noone;
 //network_connect(client_socket,"127.0.0.1",6513);
