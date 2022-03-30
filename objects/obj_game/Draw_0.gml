@@ -8,7 +8,6 @@ else if(room == rm_store){
 	draw_text(room_width*0.11, room_height*0.08, global.gold);
 	draw_set_color(c_aqua);
 	//draw_text(.x, obj_card.y +150, "Price: 50");
-	draw_sprite(card_display, 0, room_width/3, room_height/3);
 }
 else if(room=rm_deck_editor){
 	deck_name = ds_map_find_value(global.selected_deck,"name");

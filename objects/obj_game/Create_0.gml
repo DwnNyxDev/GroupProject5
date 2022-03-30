@@ -13,7 +13,11 @@ global.movingTroop = false;
 totalTurns = 0;
 curr_room=rm_start;
 prev_room=rm_start;
+<<<<<<< Updated upstream
 global.gold = 0;
+=======
+global.gold = 6000;
+>>>>>>> Stashed changes
 ini_open("saveData.ini");
 last_shop_reset = ini_read_real("Variables","last_shop_reset",0);
 card_display = ini_read_real("Variables","card_display",spr_babybowman);
@@ -40,8 +44,18 @@ if(num_decks>0){
 		}
 	}
 }
+<<<<<<< Updated upstream
+=======
+if(num_decks==1){
+	global.selected_deck=ds_list_find_value(global.deck_list,0);
+}
+>>>>>>> Stashed changes
 ini_close()
 decks_created = ds_list_create();
 deck_selector_xOffset = 0;
 deck_editor_index=0;
 deck_editor_card_groups = ds_list_create();
+
+global.temp_deck = ds_list_create();
+global.hand = ds_list_create();
+

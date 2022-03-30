@@ -10,3 +10,5 @@ card_physical = noone;
 card_object = obj_lowKnight;
 startY = y;
 moving = false;
+list_owner=noone;
+in_hand=false;

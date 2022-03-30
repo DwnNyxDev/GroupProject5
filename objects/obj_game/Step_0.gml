@@ -99,4 +99,11 @@ else if(room == rm_deck_editor){
 		deck_editor_index++;
 		ds_list_add(deck_editor_card_groups,"Human Mid Knight")
 	}
+	if(ds_list_find_index(global.card_inventory,"Skeleton Mid Knight")!=-1&&ds_list_find_index(deck_editor_card_groups,"Skeleton Mid Knight")==-1){
+		new_card_group = instance_create_layer(125+125*(deck_editor_index%3),192+192*floor(deck_editor_index/3),"Instances",obj_deck_editor_card);
+		new_card_group.sprite_index=spr_skeleton_midKnightCard;
+		new_card_group.card_name = "Skeleton Mid Knight";
+		deck_editor_index++;
+		ds_list_add(deck_editor_card_groups,"Skeleton Mid Knight")
+	}
 }

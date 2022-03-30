@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(room=rm_deck_editor){
+
+sprite_index = get_sprite_from_card_name(card_name,"card");
+
+if(room=rm_deck_editor||room=rm_battleground){
 	image_xscale=.5;
 	image_yscale=.5;
 }
@@ -20,6 +23,18 @@ if(moving){
 			card_physical.race = card_race;
 			global.money -= card_cost;
 			instance_destroy();
+		}
+	}
+}
+else if(in_hand){
+	pos_x = obj_deck.start_x+(sprite_get_width(spr_archerCard)/2)*ds_list_find_index(obj_deck.hand,id);
+	if(x!=pos_x){
+		difference = x-pos_x;
+		if(abs(difference)<5){
+			x=pos_x;
+		}
+		else{
+			x-=sign(difference)*5;
 		}
 	}
 }
