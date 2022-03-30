@@ -6,7 +6,7 @@ if(!clicked){
 else{
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
-	draw_set_font(fnt_endor);
+	draw_set_font(fnt_arial20);
 	if(deck_name = "What is the name of your deck?"){
 		draw_set_color(c_ltgray);
 	}
