@@ -13,3 +13,4 @@ selected = false;
 info = ""+name+", "+string(attack)+", "+string(defense)+", "+string(race);
 hovering = false;
 owner = "1";
+toGoTo = noone;
