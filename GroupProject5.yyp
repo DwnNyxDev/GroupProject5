@@ -85,7 +85,6 @@
     {"id":{"name":"spr_skeletonKnightCard_test","path":"sprites/spr_skeletonKnightCard_test/spr_skeletonKnightCard_test.yy",},"order":13,},
     {"id":{"name":"obj_card_display3","path":"objects/obj_card_display3/obj_card_display3.yy",},"order":20,},
     {"id":{"name":"obj_soldier","path":"objects/obj_soldier/obj_soldier.yy",},"order":22,},
-    {"id":{"name":"spr_skeletonKnightCard_test","path":"sprites/spr_skeletonKnightCard_test/spr_skeletonKnightCard_test.yy",},"order":13,},
     {"id":{"name":"spr_kingGob_attack3","path":"sprites/spr_kingGob_attack3/spr_kingGob_attack3.yy",},"order":51,},
     {"id":{"name":"spr_battle_icon","path":"sprites/spr_battle_icon/spr_battle_icon.yy",},"order":2,},
     {"id":{"name":"obj_startBtn","path":"objects/obj_startBtn/obj_startBtn.yy",},"order":8,},

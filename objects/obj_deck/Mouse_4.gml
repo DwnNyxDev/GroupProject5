@@ -6,6 +6,7 @@ if(ds_list_size(hand)<6){
 	new_card.card_name=ds_list_find_value(card_list,0);
 	new_card.list_owner = hand;
 	new_card.in_hand=true;
+	new_card.player_owner = player_owner;
 	ds_list_add(hand,new_card);
 	ds_list_delete(card_list,0);
 }

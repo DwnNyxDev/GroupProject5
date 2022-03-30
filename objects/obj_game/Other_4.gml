@@ -63,6 +63,14 @@ else if(room=rm_battleground){
 	back_btn.btn_type = "back_room";
 	back_btn.outline_color = c_black;
 	back_btn.fill_color = c_aqua;
+	if(global.game_mode="singleplayer"){
+		this_player = instance_create_layer(1216,672,"Instances",obj_deck);
+		this_player.player_owner="me";
+	}
+	else if(global.game_mode="multiplayer"){
+		this_player = instance_create_layer(1216,96,"Instances",obj_deck);
+		this_player.player_owner="enemy";
+	}
 }
 else if(room=rm_pvp_setup){
 	back_btn = instance_create_layer(1180,132,"Instances",obj_btn);

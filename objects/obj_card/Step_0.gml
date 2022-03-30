@@ -7,8 +7,7 @@ if(room=rm_deck_editor||room=rm_battleground){
 	image_xscale=.5;
 	image_yscale=.5;
 }
-draw_sprite(card_sprite,0,x,y);
-draw_text(200,200,mouse_y);
+
 if(moving){
 	x=mouse_x;
 	y=mouse_y;

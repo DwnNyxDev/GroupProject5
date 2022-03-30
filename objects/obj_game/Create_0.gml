@@ -52,4 +52,5 @@ deck_editor_card_groups = ds_list_create();
 
 global.temp_deck = ds_list_create();
 global.hand = ds_list_create();
+global.game_mode="singleplayer";
 

@@ -6,4 +6,5 @@ network_set_config(network_config_connect_timeout,1000);
 server_ip=noone;
 connected=false;
 c_type=noone;
+enemy_deck = ds_map_create();
 //network_connect(client_socket,"127.0.0.1",6513);

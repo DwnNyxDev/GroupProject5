@@ -12,3 +12,4 @@ startY = y;
 moving = false;
 list_owner=noone;
 in_hand=false;
+player_owner = noone;
