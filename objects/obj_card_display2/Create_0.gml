@@ -4,7 +4,13 @@ price = 0;
 cards_bought2 = 0;
 ini_open("saveData.ini");
 reset = ini_read_real("Variables","reset",0);
+<<<<<<< Updated upstream
 sprite_index = ini_read_real("Variables","display2",spr_babyspear);
+=======
+card_name = ini_read_string("Variables","display_2",noone);
+sprite_index = get_sprite_from_card_name(card_name,"card");
+cards_bought2 = ini_read_real("Variables","cards_bought2",0);
+>>>>>>> Stashed changes
 x=700;
 y=room_height/2;
 ini_close();

@@ -9,7 +9,17 @@ if(global.gold < price || cards_bought >=5){
 	draw_text(x-20, 620, "Wait for the shop to reset.");
 }
 else{
+<<<<<<< Updated upstream
 	draw_self();
 	draw_set_color(c_white);
 	draw_text(x, 560, "This card can be bought! " + string(cards_bought) + "/5");
 }
+=======
+	if(sprite_index!=noone){
+		draw_self();
+	}
+}
+draw_set_color(c_white);
+draw_set_valign(-1);
+draw_text(x, 560, "Price: "+string(price)+"\n" + string(5-cards_bought) + "/5");
+>>>>>>> Stashed changes
