@@ -18,6 +18,7 @@ if(ds_exists(async_load,ds_type_map)){
 		if(e_id = client_socket){
 			var read_buffer = ds_map_find_value(async_load,"buffer");
 			show_debug_message(buffer_get_size(read_buffer));
+			show_debug_message(buffer_get_type(read_buffer));
 			var b_type = buffer_read(read_buffer,buffer_string);
 			if(b_type="send_deck"){
 				

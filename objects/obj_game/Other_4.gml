@@ -64,8 +64,10 @@ else if(room=rm_battleground){
 	back_btn.outline_color = c_black;
 	back_btn.fill_color = c_aqua;
 	if(global.game_mode="singleplayer"){
-		this_player = instance_create_layer(1216,672,"Instances",obj_deck);
+		this_player = instance_create_layer(room_width-150,720,"Instances",obj_deck);
 		this_player.player_owner="me";
+		enemy_player = instance_create_layer(150,48,"Instances",obj_deck);
+		enemy_player.player_owner="enemy";
 	}
 	else if(global.game_mode="multiplayer"){
 		this_player = instance_create_layer(1216,96,"Instances",obj_deck);

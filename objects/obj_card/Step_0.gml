@@ -26,7 +26,12 @@ if(moving){
 	}
 }
 else if(in_hand){
-	pos_x = obj_deck.start_x+(sprite_get_width(spr_archerCard)/2)*ds_list_find_index(obj_deck.hand,id);
+	if(player_owner="me"){
+		pos_x = deck_owner.start_x+(sprite_get_width(spr_archerCard)/2)*ds_list_find_index(deck_owner.hand,id);
+	}
+	else{
+		pos_x = deck_owner.start_x-(sprite_get_width(spr_archerCard)/2)*ds_list_find_index(deck_owner.hand,id);
+	}
 	if(x!=pos_x){
 		difference = x-pos_x;
 		if(abs(difference)<5){
