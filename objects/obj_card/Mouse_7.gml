@@ -5,6 +5,7 @@
 		if(distance_to_object(closest_space)<40){
 			new_soldier = instance_create_depth(closest_space.x,closest_space.y,-2,obj_soldier);
 			new_soldier.sprite_index=get_sprite_from_card_name(card_name,"soldier");
+			new_solder.player_owner=player_owner;
 			ds_list_delete(deck_owner.hand,ds_list_find_index(deck_owner.hand,id));
 			instance_destroy();
 		}
