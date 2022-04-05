@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-show_debug_message("whasup");
 if(ds_list_size(hand)<6){
 	if(player_owner="me"){
 		new_card = instance_create_layer(start_x+(sprite_get_width(spr_archerCard)/2)*5,y,"Instances",obj_card);
