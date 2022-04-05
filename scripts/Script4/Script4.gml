@@ -26,6 +26,12 @@ function get_sprite_from_card_name(card_name,sprite_type){
 		else if(card_name = "Rogue Zombie"){
 			return spr_rogue_zombie_card
 		}
+		else if(card_name = "Goblin Sage"){
+			return spr_goblin_shaman_card
+		}
+		else if(card_name = "Goblin Warrior"){
+			return spr_goblin_warrior_card
+		}
 	}
 	else if(sprite_type=="soldier"){
 		if(card_name="Human High Knight"){
