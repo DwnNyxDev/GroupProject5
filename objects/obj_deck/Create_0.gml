@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 card_list = ds_list_create();
-ds_list_copy(card_list,ds_map_find_value(global.selected_deck,"card_list"));
+card_map = ds_map_create();
 hand = ds_list_create();
 graveyard = ds_list_create();
 ds_list_shuffle(card_list);

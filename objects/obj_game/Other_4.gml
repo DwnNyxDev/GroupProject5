@@ -69,10 +69,6 @@ else if(room=rm_battleground){
 		enemy_player = instance_create_layer(150,48,"Instances",obj_deck);
 		enemy_player.player_owner="enemy";
 	}
-	else if(global.game_mode="multiplayer"){
-		this_player = instance_create_layer(1216,96,"Instances",obj_deck);
-		this_player.player_owner="enemy";
-	}
 }
 else if(room=rm_pvp_setup){
 	back_btn = instance_create_layer(1180,132,"Instances",obj_btn);

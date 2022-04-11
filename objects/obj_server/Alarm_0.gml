@@ -12,5 +12,5 @@ if(ds_list_size(client_list)<2){
 		show_debug_message("broadcast success! Bytes sent: "+string(val));
 	}
 	buffer_delete(buffer);
-	alarm[0]=room_speed*5;
+	alarm[0]=room_speed*2;
 }

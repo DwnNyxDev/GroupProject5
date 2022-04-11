@@ -26,8 +26,9 @@ else if(e_type = network_type_data){
 		e_socket = ds_map_find_value(async_load,"socket");
 		for(i=0; i<ds_list_size(client_list); i++){
 			client_map = ds_list_find_value(client_list,i);
+			client_ip = ds_map_find_value(client_map,"ip");
 			client_socket = ds_map_find_value(client_map,"socket");
-			if(client_socket!=e_socket){
+			if(client_ip!=e_ip){
 				show_debug_message("Server: "+e_ip+" sending deck data to "+ds_map_find_value(client_map,"ip")+".");
 				var buffer = buffer_create(256,buffer_grow,1);
 				buffer_seek(buffer,buffer_seek_start,0);

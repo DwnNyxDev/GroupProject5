@@ -33,12 +33,16 @@ if(ds_exists(async_load,ds_type_map)){
 				buffer_delete(buffer);
 			}
 			else if(b_type="enemy_deck"){
-				ds_map_add(enemy_deck,"name",buffer_read(read_buffer,buffer_string));
+				deck_name = buffer_read(read_buffer,buffer_string);
+				show_debug_message(deck_name);
+				ds_map_clear(enemy_deck);
+				ds_map_add(enemy_deck,"name",deck_name);
 				card_list_size = buffer_read(read_buffer,buffer_u8);
 				temp_list=ds_list_create();
 				for(i=0;i<card_list_size;i++){
 					ds_list_add(temp_list,buffer_read(read_buffer,buffer_string));
 				}
+				ds_map_add_list(enemy_deck,"card_list",temp_list);
 				global.game_mode="multiplayer";
 				room_goto(rm_battleground);
 			}

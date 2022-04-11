@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(first_hand){
+	if(global.game_mode="singleplayer"){
+		ds_list_copy(card_list,ds_map_find_value(global.selected_deck,"card_list"));
+	}
+	else{
+		ds_list_copy(card_list,ds_map_find_value(card_map,"card_list"));
+	}
 	if(player_owner="me"){
 		start_x = room_width/2-sprite_get_width(spr_archerCard)/4-sprite_get_width(spr_archerCard);
 	}
