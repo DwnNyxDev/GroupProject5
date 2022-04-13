@@ -25,6 +25,7 @@ if(ds_exists(async_load,ds_type_map)){
 				buffer_write(buffer,buffer_string,"my_deck");
 				buffer_write(buffer,buffer_string,ds_map_find_value(global.selected_deck,"name"));
 				card_list = ds_map_find_value(global.selected_deck,"card_list");
+				ds_list_shuffle(card_list);
 				buffer_write(buffer,buffer_u8,ds_list_size(card_list));
 				for(i=0; i<ds_list_size(card_list); i++){
 					buffer_write(buffer,buffer_string,ds_list_find_value(card_list,i));
@@ -45,6 +46,26 @@ if(ds_exists(async_load,ds_type_map)){
 				ds_map_add_list(enemy_deck,"card_list",temp_list);
 				global.game_mode="multiplayer";
 				room_goto(rm_battleground);
+			}
+			else if(b_type="card_hovered"){
+				card_index_in_hand = buffer_read(read_buffer,buffer_u8);
+				with(obj_deck){
+					if(player_owner="enemy"){
+						hovered_card = ds_list_find_index(hand,card_index_in_hand);
+						hovered_card.hovered=true;
+					}
+				}
+			}
+			else if(b_type="card_unhovered"){
+				card_index_in_hand = buffer_read(read_buffer,buffer_u8);
+				with(obj_deck){
+					if(player_owner="enemy"){
+						hovered_card = ds_list_find_index(hand,card_index_in_hand);
+						hovered_card.hovered=false;
+						hovered_card.glow_opacity=0;
+						hovered_card.glow_dimmer=false;
+					}
+				}
 			}
 		}
 	}

@@ -1,6 +1,6 @@
-//if(player_owner="me"){
+if(player_owner="me"){
 	moving = !moving;
 	if(!moving){
 		y=startY;
 	}
-//}
+}

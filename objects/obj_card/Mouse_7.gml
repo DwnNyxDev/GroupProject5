@@ -1,5 +1,5 @@
 //if on battlefield and you have enough
-//if(player_owner="me"){
+if(player_owner="me"){
 	if(room=rm_battleground){
 		closest_space = instance_nearest(mouse_x,mouse_y,obj_space);
 		if(distance_to_object(closest_space)<40){
@@ -14,6 +14,6 @@
 			moving=false;
 		}
 	}
-//}
+}
 	//make cost go down
 //}

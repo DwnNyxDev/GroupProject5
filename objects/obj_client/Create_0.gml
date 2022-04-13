@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 client_broadcast_socket=network_create_socket_ext(network_socket_udp,6513);
-client_socket=network_create_socket(network_socket_tcp);
+global.client_socket=network_create_socket(network_socket_tcp);
 network_set_config(network_config_connect_timeout,1000);
 server_ip=noone;
 connected=false;
