@@ -8,11 +8,12 @@ if(player_owner="me"){
 				buffer_seek(buffer,buffer_seek_start,0);
 				buffer_write(buffer,buffer_string,"soldier_created");
 				buffer_write(buffer,buffer_u8,ds_list_find_index(deck_owner.hand,id));
-				buffer_write(buffer,buffer_u8,mouse_x);
-				buffer_write(buffer,buffer_u8,mouse_y);
+				buffer_write(buffer,buffer_u8,closest_space.x);
+				buffer_write(buffer,buffer_u8,closest_space.y);
 				network_send_packet(obj_client.client_socket,buffer,buffer_tell(buffer));
 				buffer_delete(buffer);
 			}
+			show_debug_message("soldier sent: "+string(closest_space.x)+","+string(closest_space.y));
 			new_soldier = instance_create_depth(closest_space.x,closest_space.y,-2,obj_soldier);
 			new_soldier.sprite_index=get_sprite_from_card_name(card_name,"soldier");
 			new_soldier.player_owner=player_owner;
