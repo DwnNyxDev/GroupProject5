@@ -7,6 +7,7 @@ if(ds_list_size(hand)<6){
 			var buffer = buffer_create(256,buffer_grow,1);
 			buffer_seek(buffer,buffer_seek_start,0);
 			buffer_write(buffer,buffer_string,"draw_card");
+			network_send_packet(obj_client.client_socket,buffer,buffer_tell(buffer));
 			buffer_delete(buffer);
 		}
 	}
