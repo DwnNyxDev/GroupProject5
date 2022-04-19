@@ -45,19 +45,15 @@ else if(e_type = network_type_data){
 			}
 		}
 	}
-	else if(b_type="card_hovered"||b_type="card_unhovered"){
+	else if(b_type="card_hovered"||b_type="card_unhovered"||b_type="soldier_created"){
 		e_socket = ds_map_find_value(async_load,"socket");
 		for(i=0; i<ds_list_size(client_list); i++){
 			client_map = ds_list_find_value(client_list,i);
 			client_ip = ds_map_find_value(client_map,"ip");
 			client_socket = ds_map_find_value(client_map,"socket");
 			if(client_ip!=e_ip){
-				var buffer = buffer_create(256,buffer_grow,1);
-				buffer_seek(buffer,buffer_seek_start,0);
-				buffer_write(buffer,buffer_string,b_type);
-				buffer_write(buffer,buffer_u8,buffer_read(read_buffer,buffer_u8));
-				network_send_packet(client_socket,buffer,buffer_tell(buffer));
-				buffer_delete(buffer);
+				network_send_packet(client_socket,read_buffer,buffer_tell(read_buffer));
+				buffer_delete(read_buffer);
 				break;
 			}
 		}
