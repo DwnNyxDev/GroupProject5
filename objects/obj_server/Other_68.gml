@@ -52,8 +52,23 @@ else if(e_type = network_type_data){
 			client_ip = ds_map_find_value(client_map,"ip");
 			client_socket = ds_map_find_value(client_map,"socket");
 			if(client_ip!=e_ip){
-				network_send_packet(client_socket,read_buffer,buffer_tell(read_buffer));
-				buffer_delete(read_buffer);
+				var buffer = buffer_create(256,buffer_grow,1);
+				buffer_seek(buffer,buffer_seek_start,0);
+				buffer_write(buffer,buffer_string,b_type);
+				if(b_type="card_hovered"||b_type="card_unhovered"){
+					//index of card in hand
+					buffer_write(buffer,buffer_u8,buffer_read(read_buffer,buffer_u8));
+				}
+				else if(b_type="soldier_created"){
+					//index of card in hand
+					buffer_write(buffer,buffer_u8,buffer_read(read_buffer,buffer_u8));
+					//mouse x (to find closest space)
+					buffer_write(buffer,buffer_u8,buffer_read(read_buffer,buffer_u8));
+					//mouse y (to find closest space)
+					buffer_write(buffer,buffer_u8,buffer_read(read_buffer,buffer_u8));
+				}
+				network_send_packet(client_socket,buffer,buffer_tell(buffer));
+				buffer_delete(buffer);
 				break;
 			}
 		}
