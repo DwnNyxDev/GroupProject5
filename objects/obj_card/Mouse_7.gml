@@ -13,7 +13,6 @@ if(player_owner="me"){
 				network_send_packet(obj_client.client_socket,buffer,buffer_tell(buffer));
 				buffer_delete(buffer);
 			}
-			show_debug_message("soldier sent: "+string(closest_space.x)+","+string(closest_space.y));
 			new_soldier = instance_create_depth(closest_space.x,closest_space.y,-2,obj_soldier);
 			new_soldier.sprite_index=get_sprite_from_card_name(card_name,"soldier");
 			new_soldier.player_owner=player_owner;
