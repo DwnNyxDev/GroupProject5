@@ -51,7 +51,7 @@ if(ds_exists(async_load,ds_type_map)){
 				card_index_in_hand = buffer_read(read_buffer,buffer_u8);
 				with(obj_deck){
 					if(player_owner="enemy"){
-						hovered_card = ds_list_find_index(hand,card_index_in_hand);
+						hovered_card = ds_list_find_value(hand,other.card_index_in_hand);
 						hovered_card.hovered=true;
 					}
 				}
@@ -60,7 +60,7 @@ if(ds_exists(async_load,ds_type_map)){
 				card_index_in_hand = buffer_read(read_buffer,buffer_u8);
 				with(obj_deck){
 					if(player_owner="enemy"){
-						hovered_card = ds_list_find_index(hand,card_index_in_hand);
+						hovered_card = ds_list_find_value(hand,other.card_index_in_hand);
 						hovered_card.hovered=false;
 						hovered_card.glow_opacity=0;
 						hovered_card.glow_dimmer=false;

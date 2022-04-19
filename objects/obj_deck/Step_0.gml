@@ -21,7 +21,6 @@ if(first_hand){
 			new_card = instance_create_layer(start_x-(sprite_get_width(spr_archerCard)/2)*i,y,"Instances",obj_card);
 		}
 		new_card.card_name=ds_list_find_value(card_list,i);
-		show_debug_message(new_card.card_name);
 		new_card.list_owner = hand;
 		new_card.in_hand=true;
 		new_card.player_owner = player_owner;
