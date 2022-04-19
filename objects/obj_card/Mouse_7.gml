@@ -8,8 +8,8 @@ if(player_owner="me"){
 				buffer_seek(buffer,buffer_seek_start,0);
 				buffer_write(buffer,buffer_string,"soldier_created");
 				buffer_write(buffer,buffer_u8,ds_list_find_index(deck_owner.hand,id));
-				buffer_write(buffer,buffer_u8,closest_space.x);
-				buffer_write(buffer,buffer_u8,closest_space.y);
+				buffer_write(buffer,buffer_u16,closest_space.x);
+				buffer_write(buffer,buffer_u16,closest_space.y);
 				network_send_packet(obj_client.client_socket,buffer,buffer_tell(buffer));
 				buffer_delete(buffer);
 			}

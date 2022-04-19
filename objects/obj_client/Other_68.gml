@@ -69,13 +69,13 @@ if(ds_exists(async_load,ds_type_map)){
 			}
 			else if(b_type="soldier_created"){
 				card_index_in_hand = buffer_read(read_buffer,buffer_u8);
-				mouseX = buffer_read(read_buffer,buffer_u8);
-				mouseY = buffer_read(read_buffer,buffer_u8);
+				mouseX = buffer_read(read_buffer,buffer_u16);
+				mouseY = buffer_read(read_buffer,buffer_u16);
 				show_debug_message("soldier position: "+string(mouseX)+","+string(mouseY));
 				with(obj_deck){
 					if(player_owner="enemy"){
 						soldier_card = ds_list_find_value(hand,other.card_index_in_hand);
-						closest_space = instance_nearest(other.mouseX,other.mouseY,obj_space);
+						closest_space = instance_nearest(986-(other.mouseX-336),274-(other.mouseY-490),obj_space);
 						new_soldier = instance_create_depth(closest_space.x,closest_space.y,-2,obj_soldier);
 						new_soldier.sprite_index=get_sprite_from_card_name(soldier_card.card_name,"soldier");
 						new_soldier.player_owner=player_owner;

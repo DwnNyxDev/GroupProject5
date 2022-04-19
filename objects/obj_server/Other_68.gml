@@ -63,9 +63,9 @@ else if(e_type = network_type_data){
 					//index of card in hand
 					buffer_write(buffer,buffer_u8,buffer_read(read_buffer,buffer_u8));
 					//mouse x (to find closest space)
-					buffer_write(buffer,buffer_u8,buffer_read(read_buffer,buffer_u8));
+					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
 					//mouse y (to find closest space)
-					buffer_write(buffer,buffer_u8,buffer_read(read_buffer,buffer_u8));
+					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
 				}
 				network_send_packet(client_socket,buffer,buffer_tell(buffer));
 				buffer_delete(buffer);
