@@ -82,10 +82,14 @@ if(ds_exists(async_load,ds_type_map)){
 						ds_list_delete(hand,other.card_index_in_hand);
 						instance_destroy(soldier_card);
 					}
+				}	
+			}
+			else if(b_type="draw_card"){
+				with(obj_deck){
+					if(player_owner="enemy"){
+						event_perform(ev_left_press,0);
+					}
 				}
-				
-				
-				
 			}
 		}
 	}

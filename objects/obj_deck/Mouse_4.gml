@@ -3,6 +3,12 @@
 if(ds_list_size(hand)<6){
 	if(player_owner="me"){
 		new_card = instance_create_layer(start_x+(sprite_get_width(spr_archerCard)/2)*5,y,"Instances",obj_card);
+		if(obj_client.connected){
+			var buffer = buffer_create(256,buffer_grow,1);
+			buffer_seek(buffer,buffer_seek_start,0);
+			buffer_write(buffer,buffer_string,"draw_card");
+			buffer_delete(buffer);
+		}
 	}
 	else{
 		new_card = instance_create_layer(start_x-(sprite_get_width(spr_archerCard)/2)*5,y,"Instances",obj_card);

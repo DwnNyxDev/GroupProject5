@@ -45,7 +45,7 @@ else if(e_type = network_type_data){
 			}
 		}
 	}
-	else if(b_type="card_hovered"||b_type="card_unhovered"||b_type="soldier_created"){
+	else if(b_type="card_hovered"||b_type="card_unhovered"||b_type="soldier_created"||b_type="draw_card"){
 		e_socket = ds_map_find_value(async_load,"socket");
 		for(i=0; i<ds_list_size(client_list); i++){
 			client_map = ds_list_find_value(client_list,i);
