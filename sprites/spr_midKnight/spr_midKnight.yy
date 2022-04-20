@@ -251,7 +251,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_midKnight","path":"sprites/spr_midKnight/spr_midKnight.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_midKnight",
     "tags": [],
     "resourceType": "GMSequence",

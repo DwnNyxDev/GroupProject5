@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_mutant_zombie_card","path":"sprites/spr_mutant_zombie_card/spr_mutant_zombie_card.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_mutant_zombie_card",
     "tags": [],
     "resourceType": "GMSequence",

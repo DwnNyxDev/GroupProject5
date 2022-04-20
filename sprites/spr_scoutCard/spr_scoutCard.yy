@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_scoutCard","path":"sprites/spr_scoutCard/spr_scoutCard.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_scoutCard",
     "tags": [],
     "resourceType": "GMSequence",

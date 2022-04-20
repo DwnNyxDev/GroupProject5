@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_soldier1","path":"sprites/spr_soldier1/spr_soldier1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_soldier1",
     "tags": [],
     "resourceType": "GMSequence",

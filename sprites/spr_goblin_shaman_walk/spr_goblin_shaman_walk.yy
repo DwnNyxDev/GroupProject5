@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_goblin_shaman_walk","path":"sprites/spr_goblin_shaman_walk/spr_goblin_shaman_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_goblin_shaman_walk",
     "tags": [],
     "resourceType": "GMSequence",

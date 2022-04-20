@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_rogue_zombie_death","path":"sprites/spr_rogue_zombie_death/spr_rogue_zombie_death.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_rogue_zombie_death",
     "tags": [],
     "resourceType": "GMSequence",

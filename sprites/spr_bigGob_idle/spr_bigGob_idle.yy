@@ -127,7 +127,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bigGob_idle","path":"sprites/spr_bigGob_idle/spr_bigGob_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bigGob_idle",
     "tags": [],
     "resourceType": "GMSequence",

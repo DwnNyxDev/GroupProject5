@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_lowKnight_card","path":"sprites/spr_lowKnight_card/spr_lowKnight_card.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_lowKnight_card",
     "tags": [],
     "resourceType": "GMSequence",

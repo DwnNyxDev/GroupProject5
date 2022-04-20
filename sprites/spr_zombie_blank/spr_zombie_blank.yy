@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_zombie_blank","path":"sprites/spr_zombie_blank/spr_zombie_blank.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_zombie_blank",
     "tags": [],
     "resourceType": "GMSequence",

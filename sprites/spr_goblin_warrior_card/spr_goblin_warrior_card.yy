@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_goblin_warrior_card","path":"sprites/spr_goblin_warrior_card/spr_goblin_warrior_card.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_goblin_warrior_card",
     "tags": [],
     "resourceType": "GMSequence",

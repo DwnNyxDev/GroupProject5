@@ -61,7 +61,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_create_deck","path":"sprites/spr_create_deck/spr_create_deck.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_create_deck",
     "tags": [],
     "resourceType": "GMSequence",

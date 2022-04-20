@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_archerCard","path":"sprites/spr_archerCard/spr_archerCard.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_archerCard",
     "tags": [],
     "resourceType": "GMSequence",

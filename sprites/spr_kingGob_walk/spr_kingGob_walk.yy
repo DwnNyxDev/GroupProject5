@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_kingGob_walk","path":"sprites/spr_kingGob_walk/spr_kingGob_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_kingGob_walk",
     "tags": [],
     "resourceType": "GMSequence",

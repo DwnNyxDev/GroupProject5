@@ -251,7 +251,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_highKnight","path":"sprites/spr_highKnight/spr_highKnight.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_highKnight",
     "tags": [],
     "resourceType": "GMSequence",

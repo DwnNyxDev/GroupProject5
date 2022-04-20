@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_highKnight_spear","path":"sprites/spr_highKnight_spear/spr_highKnight_spear.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_highKnight_spear",
     "tags": [],
     "resourceType": "GMSequence",

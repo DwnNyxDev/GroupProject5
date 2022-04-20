@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skellySpell","path":"sprites/spr_skellySpell/spr_skellySpell.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_skellySpell",
     "tags": [],
     "resourceType": "GMSequence",

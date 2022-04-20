@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_midKnight_walk","path":"sprites/spr_midKnight_walk/spr_midKnight_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_midKnight_walk",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_goblin_shaman_card","path":"sprites/spr_goblin_shaman_card/spr_goblin_shaman_card.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_goblin_shaman_card",
     "tags": [],
     "resourceType": "GMSequence",

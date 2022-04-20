@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_kingGob","path":"sprites/spr_kingGob/spr_kingGob.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_kingGob",
     "tags": [],
     "resourceType": "GMSequence",

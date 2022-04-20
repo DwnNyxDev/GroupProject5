@@ -251,7 +251,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_robinhood","path":"sprites/spr_robinhood/spr_robinhood.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_robinhood",
     "tags": [],
     "resourceType": "GMSequence",

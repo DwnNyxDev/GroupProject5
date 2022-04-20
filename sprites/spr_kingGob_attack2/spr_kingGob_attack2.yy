@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_kingGob_attack2","path":"sprites/spr_kingGob_attack2/spr_kingGob_attack2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_kingGob_attack2",
     "tags": [],
     "resourceType": "GMSequence",

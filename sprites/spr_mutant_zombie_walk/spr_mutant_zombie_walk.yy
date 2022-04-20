@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_mutant_zombie_walk","path":"sprites/spr_mutant_zombie_walk/spr_mutant_zombie_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_mutant_zombie_walk",
     "tags": [],
     "resourceType": "GMSequence",

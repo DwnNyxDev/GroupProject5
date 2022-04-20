@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_price_button","path":"sprites/spr_price_button/spr_price_button.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_price_button",
     "tags": [],
     "resourceType": "GMSequence",

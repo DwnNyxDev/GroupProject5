@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_highKnight_sword","path":"sprites/spr_highKnight_sword/spr_highKnight_sword.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_highKnight_sword",
     "tags": [],
     "resourceType": "GMSequence",

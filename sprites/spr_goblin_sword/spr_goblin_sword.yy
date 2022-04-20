@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_goblin_sword","path":"sprites/spr_goblin_sword/spr_goblin_sword.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_goblin_sword",
     "tags": [],
     "resourceType": "GMSequence",

@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_scout_walk","path":"sprites/spr_scout_walk/spr_scout_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_scout_walk",
     "tags": [],
     "resourceType": "GMSequence",

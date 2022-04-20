@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skeletonMageCard","path":"sprites/spr_skeletonMageCard/spr_skeletonMageCard.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_skeletonMageCard",
     "tags": [],
     "resourceType": "GMSequence",

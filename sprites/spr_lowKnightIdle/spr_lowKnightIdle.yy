@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_lowKnightIdle","path":"sprites/spr_lowKnightIdle/spr_lowKnightIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_lowKnightIdle",
     "tags": [],
     "resourceType": "GMSequence",

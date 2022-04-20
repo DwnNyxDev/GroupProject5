@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_card_template","path":"sprites/spr_card_template/spr_card_template.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_card_template",
     "tags": [],
     "resourceType": "GMSequence",

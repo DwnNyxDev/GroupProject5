@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_lowKnight_sword","path":"sprites/spr_lowKnight_sword/spr_lowKnight_sword.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_lowKnight_sword",
     "tags": [],
     "resourceType": "GMSequence",

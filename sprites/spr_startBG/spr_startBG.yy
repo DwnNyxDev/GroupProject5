@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_startBG","path":"sprites/spr_startBG/spr_startBG.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_startBG",
     "tags": [],
     "resourceType": "GMSequence",

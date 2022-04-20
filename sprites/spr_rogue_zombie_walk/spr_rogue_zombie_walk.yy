@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_rogue_zombie_walk","path":"sprites/spr_rogue_zombie_walk/spr_rogue_zombie_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_rogue_zombie_walk",
     "tags": [],
     "resourceType": "GMSequence",

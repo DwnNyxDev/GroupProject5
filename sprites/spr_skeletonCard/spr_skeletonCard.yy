@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skeletonCard","path":"sprites/spr_skeletonCard/spr_skeletonCard.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_skeletonCard",
     "tags": [],
     "resourceType": "GMSequence",

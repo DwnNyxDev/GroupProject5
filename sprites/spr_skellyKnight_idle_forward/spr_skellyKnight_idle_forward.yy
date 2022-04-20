@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skellyKnight_idle_forward","path":"sprites/spr_skellyKnight_idle_forward/spr_skellyKnight_idle_forward.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_skellyKnight_idle_forward",
     "tags": [],
     "resourceType": "GMSequence",

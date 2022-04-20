@@ -46,53 +46,46 @@ if(ds_exists(async_load,ds_type_map)){
 				global.game_mode="multiplayer";
 				room_goto(rm_battleground);
 			}
-			else if(b_type="card_hovered"){
-				card_index_in_hand = buffer_read(read_buffer,buffer_u8);
-				with(obj_deck){
-					if(player_owner="enemy"){
-						hovered_card = ds_list_find_value(hand,other.card_index_in_hand);
-						if(!is_undefined(hovered_card)){
-							hovered_card.hovered=true;
+			else if(b_type="card_hovered"||b_type="card_unhovered"||b_type="soldier_created"){
+				var b_sender = buffer_read(read_buffer,buffer_string);
+				if(b_sender!=obj_client.c_type){
+					card_index_in_hand = buffer_read(read_buffer,buffer_u8);
+					if(b_type="soldier_created"){
+						mouseX = buffer_read(read_buffer,buffer_u16);
+						mouseY = buffer_read(read_buffer,buffer_u16);
+					}
+					with(obj_deck){
+						if(player_owner="enemy"){
+							card = ds_list_find_value(hand,other.card_index_in_hand);
+							if(!is_undefined(card)){
+								if(b_type="card_hovered"){
+									card.hovered=true;
+								}
+								else if(b_type="card_unhovered"){
+									card.hovered=false;
+									card.glow_opacity=0;
+									card.glow_dimmer=false;
+								}
+								else if(b_type="soldier_created"){
+									closest_space = instance_nearest(986-(other.mouseX-336),274-(other.mouseY-490),obj_space);
+									new_soldier = instance_create_depth(closest_space.x,closest_space.y,-2,obj_soldier);
+									new_soldier.sprite_index=get_sprite_from_card_name(card.card_name,"soldier");
+									new_soldier.player_owner=player_owner;
+									ds_list_delete(hand,other.card_index_in_hand);
+									instance_destroy(card);
+								}
+							}
 						}
 					}
 				}
-			}
-			else if(b_type="card_unhovered"){
-				card_index_in_hand = buffer_read(read_buffer,buffer_u8);
-				with(obj_deck){
-					if(player_owner="enemy"){
-						hovered_card = ds_list_find_value(hand,other.card_index_in_hand);
-						if(!is_undefined(hovered_card)){
-							hovered_card.hovered=false;
-							hovered_card.glow_opacity=0;
-							hovered_card.glow_dimmer=false;
-						}
-					}
-				}
-			}
-			else if(b_type="soldier_created"){
-				card_index_in_hand = buffer_read(read_buffer,buffer_u8);
-				mouseX = buffer_read(read_buffer,buffer_u16);
-				mouseY = buffer_read(read_buffer,buffer_u16);
-				with(obj_deck){
-					if(player_owner="enemy"){
-						soldier_card = ds_list_find_value(hand,other.card_index_in_hand);
-						if(!is_undefined(soldier_card)){
-							closest_space = instance_nearest(986-(other.mouseX-336),274-(other.mouseY-490),obj_space);
-							new_soldier = instance_create_depth(closest_space.x,closest_space.y,-2,obj_soldier);
-							new_soldier.sprite_index=get_sprite_from_card_name(soldier_card.card_name,"soldier");
-							new_soldier.player_owner=player_owner;
-							ds_list_delete(hand,other.card_index_in_hand);
-							instance_destroy(soldier_card);
-						}
-					}
-				}	
 			}
 			else if(b_type="draw_card"){
-				show_debug_message("he drew he drew");
-				with(obj_deck){
-					if(player_owner="enemy"){
-						event_perform(ev_mouse,ev_left_press);
+				var b_sender = buffer_read(read_buffer,buffer_string);
+				if(b_sender!=obj_client.c_type){
+					with(obj_deck){
+						if(player_owner="enemy"){
+							event_perform(ev_mouse,ev_left_press);
+						}
 					}
 				}
 			}

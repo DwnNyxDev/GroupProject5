@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_zombie_idle","path":"sprites/spr_zombie_idle/spr_zombie_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_zombie_idle",
     "tags": [],
     "resourceType": "GMSequence",

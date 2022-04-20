@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_grayCard","path":"sprites/spr_grayCard/spr_grayCard.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_grayCard",
     "tags": [],
     "resourceType": "GMSequence",

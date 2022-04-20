@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"skeletonKnight","path":"sprites/skeletonKnight/skeletonKnight.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "skeletonKnight",
     "tags": [],
     "resourceType": "GMSequence",

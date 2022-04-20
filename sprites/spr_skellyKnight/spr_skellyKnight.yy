@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skellyKnight","path":"sprites/spr_skellyKnight/spr_skellyKnight.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_skellyKnight",
     "tags": [],
     "resourceType": "GMSequence",

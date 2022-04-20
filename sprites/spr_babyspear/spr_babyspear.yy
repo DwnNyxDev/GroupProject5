@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_babyspear","path":"sprites/spr_babyspear/spr_babyspear.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_babyspear",
     "tags": [],
     "resourceType": "GMSequence",

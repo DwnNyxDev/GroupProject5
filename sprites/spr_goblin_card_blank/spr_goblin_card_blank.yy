@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_goblin_card_blank","path":"sprites/spr_goblin_card_blank/spr_goblin_card_blank.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_goblin_card_blank",
     "tags": [],
     "resourceType": "GMSequence",

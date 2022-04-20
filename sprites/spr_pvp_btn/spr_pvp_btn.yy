@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pvp_btn","path":"sprites/spr_pvp_btn/spr_pvp_btn.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pvp_btn",
     "tags": [],
     "resourceType": "GMSequence",

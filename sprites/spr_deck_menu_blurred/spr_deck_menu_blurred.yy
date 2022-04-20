@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_deck_menu_blurred","path":"sprites/spr_deck_menu_blurred/spr_deck_menu_blurred.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_deck_menu_blurred",
     "tags": [],
     "resourceType": "GMSequence",

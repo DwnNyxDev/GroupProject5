@@ -7,6 +7,7 @@ if(player_owner="me"){
 				var buffer = buffer_create(256,buffer_grow,1);
 				buffer_seek(buffer,buffer_seek_start,0);
 				buffer_write(buffer,buffer_string,"soldier_created");
+				buffer_write(buffer,buffer_string,obj_client.c_type);
 				buffer_write(buffer,buffer_u8,ds_list_find_index(deck_owner.hand,id));
 				buffer_write(buffer,buffer_u16,closest_space.x);
 				buffer_write(buffer,buffer_u16,closest_space.y);

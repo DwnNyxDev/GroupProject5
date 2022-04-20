@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_rogueZombie","path":"sprites/spr_rogueZombie/spr_rogueZombie.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_rogueZombie",
     "tags": [],
     "resourceType": "GMSequence",

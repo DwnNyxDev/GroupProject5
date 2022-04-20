@@ -163,7 +163,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skelly","path":"sprites/spr_skelly/spr_skelly.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_skelly",
     "tags": [],
     "resourceType": "GMSequence",

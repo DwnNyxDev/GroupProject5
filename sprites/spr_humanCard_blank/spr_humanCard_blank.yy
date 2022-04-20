@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_humanCard_blank","path":"sprites/spr_humanCard_blank/spr_humanCard_blank.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_humanCard_blank",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skeletonKnightCard_test","path":"sprites/spr_skeletonKnightCard_test/spr_skeletonKnightCard_test.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_skeletonKnightCard_test",
     "tags": [],
     "resourceType": "GMSequence",

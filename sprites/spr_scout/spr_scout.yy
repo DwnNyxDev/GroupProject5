@@ -251,7 +251,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_scout","path":"sprites/spr_scout/spr_scout.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_scout",
     "tags": [],
     "resourceType": "GMSequence",

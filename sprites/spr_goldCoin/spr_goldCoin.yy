@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_goldCoin","path":"sprites/spr_goldCoin/spr_goldCoin.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_goldCoin",
     "tags": [],
     "resourceType": "GMSequence",

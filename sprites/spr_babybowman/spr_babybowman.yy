@@ -131,7 +131,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_babybowman","path":"sprites/spr_babybowman/spr_babybowman.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_babybowman",
     "tags": [],
     "resourceType": "GMSequence",

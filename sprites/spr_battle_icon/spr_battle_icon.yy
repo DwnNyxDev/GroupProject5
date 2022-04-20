@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_battle_icon","path":"sprites/spr_battle_icon/spr_battle_icon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_battle_icon",
     "tags": [],
     "resourceType": "GMSequence",

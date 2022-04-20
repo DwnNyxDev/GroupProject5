@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_zone2","path":"sprites/spr_zone2/spr_zone2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_zone2",
     "tags": [],
     "resourceType": "GMSequence",

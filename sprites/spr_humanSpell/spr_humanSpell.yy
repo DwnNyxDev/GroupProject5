@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_humanSpell","path":"sprites/spr_humanSpell/spr_humanSpell.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_humanSpell",
     "tags": [],
     "resourceType": "GMSequence",

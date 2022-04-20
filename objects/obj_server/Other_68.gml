@@ -11,16 +11,18 @@ if(e_type = network_type_connect){
 	ds_map_add(new_client,"ip",e_ip);
 	ds_list_add(client_list,new_client);
 	if(ds_list_size(client_list)==2){
-		var buffer = buffer_create(256,buffer_grow,1);
-		buffer_seek(buffer,buffer_seek_start,0);
-		buffer_write(buffer,buffer_string,"send_deck");
 		for(i=0;i<ds_list_size(client_list);i++){
+			var buffer = buffer_create(256,buffer_grow,1);
+			buffer_seek(buffer,buffer_seek_start,0);
+			buffer_write(buffer,buffer_string,"send_deck");
 			network_send_packet(ds_map_find_value(ds_list_find_value(client_list,i),"socket"),buffer,buffer_tell(buffer));
+			buffer_delete(buffer);
 		}	
 	}
 }
 else if(e_type = network_type_data){
 	var read_buffer = ds_map_find_value(async_load,"buffer");
+	buffer_seek(read_buffer,buffer_seek_start,0);
 	var b_type = buffer_read(read_buffer,buffer_string);
 	if(b_type="my_deck"){
 		e_socket = ds_map_find_value(async_load,"socket");
@@ -46,15 +48,23 @@ else if(e_type = network_type_data){
 		}
 	}
 	else if(b_type="card_hovered"||b_type="card_unhovered"||b_type="soldier_created"||b_type="draw_card"){
+		buffers_received++;
+		show_debug_message("buffers received: "+string(buffers_received));
 		e_socket = ds_map_find_value(async_load,"socket");
 		for(i=0; i<ds_list_size(client_list); i++){
 			client_map = ds_list_find_value(client_list,i);
 			client_ip = ds_map_find_value(client_map,"ip");
 			client_socket = ds_map_find_value(client_map,"socket");
 			if(client_ip!=e_ip){
+				show_debug_message(i);
+				show_debug_message("client ip: "+client_ip);
+				show_debug_message("e ip: "+e_ip);
 				var buffer = buffer_create(256,buffer_grow,1);
 				buffer_seek(buffer,buffer_seek_start,0);
 				buffer_write(buffer,buffer_string,b_type);
+				//which client sent
+				buffer_write(buffer,buffer_string,buffer_read(read_buffer,buffer_string));
+				
 				if(b_type="card_hovered"||b_type="card_unhovered"){
 					//index of card in hand
 					buffer_write(buffer,buffer_u8,buffer_read(read_buffer,buffer_u8));

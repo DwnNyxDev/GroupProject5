@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_lowKnight_walk","path":"sprites/spr_lowKnight_walk/spr_lowKnight_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_lowKnight_walk",
     "tags": [],
     "resourceType": "GMSequence",

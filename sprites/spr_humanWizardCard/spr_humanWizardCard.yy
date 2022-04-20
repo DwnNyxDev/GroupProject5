@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_humanWizardCard","path":"sprites/spr_humanWizardCard/spr_humanWizardCard.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_humanWizardCard",
     "tags": [],
     "resourceType": "GMSequence",

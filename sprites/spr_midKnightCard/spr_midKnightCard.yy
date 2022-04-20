@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_midKnightCard","path":"sprites/spr_midKnightCard/spr_midKnightCard.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_midKnightCard",
     "tags": [],
     "resourceType": "GMSequence",

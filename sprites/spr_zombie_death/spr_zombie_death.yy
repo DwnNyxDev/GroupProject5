@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_zombie_death","path":"sprites/spr_zombie_death/spr_zombie_death.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_zombie_death",
     "tags": [],
     "resourceType": "GMSequence",

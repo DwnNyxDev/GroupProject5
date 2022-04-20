@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_lowKnight_death","path":"sprites/spr_lowKnight_death/spr_lowKnight_death.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_lowKnight_death",
     "tags": [],
     "resourceType": "GMSequence",

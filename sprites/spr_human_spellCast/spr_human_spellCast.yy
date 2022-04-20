@@ -251,7 +251,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_human_spellCast","path":"sprites/spr_human_spellCast/spr_human_spellCast.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_human_spellCast",
     "tags": [],
     "resourceType": "GMSequence",
