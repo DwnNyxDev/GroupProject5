@@ -1,8 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(ds_exists(async_load,ds_type_map)){
-	if(!connected&&c_type!="host client"){
+	if(!connected&&c_type!="host"){
 		server_ip=ds_map_find_value(async_load,"ip");
+		var read_buffer = ds_map_find_value(async_load,"buffer");
+		buffer_seek(read_buffer,buffer_seek_start,0);
+		var host_name = buffer_read(read_buffer,buffer_string);
+		temp_join_btn = instance_create_layer(0,room_height*.3+(room_height*.1)*(ds_list_size(join_btns)),"Instances",obj_room_join_btn);
+		temp_join_btn.host_name = host_name;
+		temp_join_btn.host_ip = server_ip;
+		/*
 		show_debug_message(server_ip);
 		if(network_connect(client_socket,server_ip,48001)<0){
 			server_ip=noone;
@@ -10,8 +17,9 @@ if(ds_exists(async_load,ds_type_map)){
 		}
 		else{
 			connected=true;
-			network_destroy(client_broadcast_socket);	
+			network_destroy(client_broadcast_socket);
 		}
+		*/
 	}
 	else if(connected){
 		e_id = ds_map_find_value(async_load, "id");

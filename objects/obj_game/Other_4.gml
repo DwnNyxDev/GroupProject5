@@ -45,6 +45,13 @@ else if(room=rm_deck_editor){
 	deck_editor_index=0;
 	instance_create_layer(room_width/2,room_height/2,"Preground",obj_deck_add);
 }
+else if(room=rm_name_editor){
+	back_btn = instance_create_layer(room_width*.95,room_height*.05,"Instances",obj_btn);
+	back_btn.btn_type = "back_room";
+	back_btn.outline_color = c_black;
+	back_btn.fill_color = c_aqua;
+	instance_create_layer(room_width/2,room_height/2,"Instances",obj_name_edit);
+}
 else if(room=rm_store){
 	back_btn = instance_create_layer(1180,132,"Instances",obj_btn);
 	back_btn.btn_type = "back_room";

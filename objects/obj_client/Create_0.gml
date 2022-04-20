@@ -7,4 +7,5 @@ server_ip=noone;
 connected=false;
 c_type="guest";
 enemy_deck = ds_map_create();
+join_btns = ds_list_create();
 //network_connect(client_socket,"127.0.0.1",6513);

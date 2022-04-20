@@ -9,4 +9,7 @@ if(btn_type="back_room"){
 	else if(room=rm_deck_editor){
 		room_goto(rm_deck_selector);
 	}
+	else if(room=rm_name_editor){
+		room_goto(rm_start);
+	}
 }

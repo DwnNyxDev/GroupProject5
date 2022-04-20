@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+draw_set_font(-1);
 if(btn_type="create"){
 	if(hovered){
 		image_blend=make_color_rgb(0,200,0);

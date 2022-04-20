@@ -15,6 +15,7 @@ curr_room=rm_start;
 prev_room=rm_start;
 global.gold = 60000;
 ini_open("saveData.ini");
+global.player_name = ini_read_string("Variables","player_name",noone);
 last_shop_reset = ini_read_real("Variables","last_shop_reset",0);
 card_display = ini_read_real("Variables","card_display",spr_babybowman);
 card_display2 = ini_read_real("Variables","card_display2",spr_babyspear);

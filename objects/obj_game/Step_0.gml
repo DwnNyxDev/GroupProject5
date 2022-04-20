@@ -14,7 +14,12 @@ if(global.phase >= 5){
 	totalTurns ++;
 }
 if(room=rm_start&&keyboard_check_pressed(vk_enter)){
-	room_goto(rm_menu);
+	if(global.player_name!=noone){
+		room_goto(rm_menu);
+	}
+	else{
+		room_goto(rm_name_editor);
+	}
 }
 else if(room=rm_menu){
 	if(keyboard_check_pressed(vk_left)&&menu_selected_index>0){
