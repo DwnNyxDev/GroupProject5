@@ -43,5 +43,11 @@ function get_sprite_from_card_name(card_name,sprite_type){
 		else if(card_name="Skeleton Mid Knight"){
 			return spr_skellyKnight_idle_forward
 		}
+		else if(card_name="Goblin Sage"){
+			return spr_goblin_shaman_idle
+		}
+		else if(card_name="Goblin Warrior"){
+			return spr_goblin_walk
+		}
 	}
 }
