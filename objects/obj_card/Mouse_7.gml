@@ -2,6 +2,15 @@
 if(player_owner="me"){
 	if(room=rm_battleground){
 		closest_space = instance_nearest(mouse_x,1800,obj_space);
+		if(distance_to_object(closest_space) >= 40){
+			show_debug_message("distance");
+		}
+		if(!hovered){
+			show_debug_message("nothover");
+		}
+		if(closest_space.occupying){
+			show_debug_message("occ");
+		}
 		if(distance_to_object(closest_space)<40 && hovered && !closest_space.occupying){
 			if(global.game_mode = "multiplayer"&&obj_client.connected){
 				var buffer = buffer_create(256,buffer_grow,1);

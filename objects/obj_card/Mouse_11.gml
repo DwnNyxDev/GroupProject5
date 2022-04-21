@@ -1,11 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(player_owner="me" && global.game_mode = "multiplayer"){
+if(player_owner="me"){
 	hovered=false;
 	glow_opacity=0;
 	glow_dimmer=false;
-	if(obj_client.connected){
+	if(global.game_mode = "multiplayer" && obj_client.connected){
 		var buffer = buffer_create(256,buffer_grow,1);
 		buffer_seek(buffer,buffer_seek_start,0);
 		buffer_write(buffer,buffer_string,"card_unhovered");

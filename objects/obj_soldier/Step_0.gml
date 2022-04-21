@@ -18,8 +18,8 @@ if(selected){
 			x = potential.x;
 			leftMoves--;
 		}
-		else if(potential.occupying){
-			enemy = potential.currentTroop
+		else if(leftMoves > 0 && potential.enemyOccupying){
+			enemy = potential.currentTroop;
 			if(enemy.owner = "enemy"){
 				enemy.defense -= attack;
 				if(enemy.defense <= 0){
@@ -43,6 +43,21 @@ if(selected){
 			x = potential.x;
 			leftMoves--;
 		}
+		else if(leftMoves > 0 && potential.enemyOccupying){
+			enemy = potential.currentTroop;
+			if(enemy.owner = "enemy"){
+				enemy.defense -= attack;
+				if(enemy.defense <= 0){
+					instance_destroy(enemy);
+				}
+				else{
+					defense -= enemy.attack;
+				}
+				if(defense <= 0){
+					instance_destroy();
+				}
+			}
+		}
 	}
 	if(keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))){
 		potential = instance_nearest(x,y-80,obj_space);
@@ -53,6 +68,21 @@ if(selected){
 			y = potential.y;
 			upMoves--;
 		}
+		else if(upMoves > 0 && potential.enemyOccupying){
+			enemy = potential.currentTroop;
+			if(enemy.owner = "enemy"){
+				enemy.defense -= attack;
+				if(enemy.defense <= 0){
+					instance_destroy(enemy);
+				}
+				else{
+					defense -= enemy.attack;
+				}
+				if(defense <= 0){
+					instance_destroy();
+				}
+			}
+		}
 	}
 	if(keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))){
 		potential = instance_nearest(x,y+80,obj_space);
@@ -62,6 +92,21 @@ if(selected){
 			current = potential;
 			y = potential.y;
 			upMoves--;
+		}
+		else if(upMoves > 0 && potential.enemyOccupying){
+			enemy = potential.currentTroop;
+			if(enemy.owner = "enemy"){
+				enemy.defense -= attack;
+				if(enemy.defense <= 0){
+					instance_destroy(enemy);
+				}
+				else{
+					defense -= enemy.attack;
+				}
+				if(defense <= 0){
+					instance_destroy();
+				}
+			}
 		}
 	}
 }
