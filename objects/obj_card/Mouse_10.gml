@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(player_owner="me"){
+if(player_owner="me" && global.game_mode = "multiplayer"){
 	hovered=true;
 	if(obj_client.connected){
 		var buffer = buffer_create(256,buffer_grow,1);

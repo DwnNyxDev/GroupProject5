@@ -3,6 +3,13 @@
 if(ds_exists(async_load,ds_type_map)){
 	if(!connected&&c_type!="host"){
 		server_ip=ds_map_find_value(async_load,"ip");
+		var read_buffer = ds_map_find_value(async_load,"buffer");
+		buffer_seek(read_buffer,buffer_seek_start,0);
+		var host_name = buffer_read(read_buffer,buffer_string);
+		temp_join_btn = instance_create_layer(0,room_height*.3+(room_height*.1)*(ds_list_size(join_btns)),"Instances",obj_room_join_btn);
+		temp_join_btn.host_name = host_name;
+		temp_join_btn.host_ip = server_ip;
+		ds_list_add(join_btns,temp_join_btn);
 		already_made=false;
 		for(i=0; i<ds_list_size(join_btns); i++){
 			prev_btn = ds_list_find_value(join_btns,i);
