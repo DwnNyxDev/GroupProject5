@@ -61,7 +61,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_create_deck","path":"sprites/spr_create_deck/spr_create_deck.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_create_deck",
     "tags": [],
     "resourceType": "GMSequence",
@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "cards",
-    "path": "folders/Sounds/Sprites/cards.yy",
+    "path": "folders/Sprites/cards.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_create_deck",

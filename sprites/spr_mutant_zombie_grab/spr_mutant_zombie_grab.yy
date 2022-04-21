@@ -111,7 +111,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_mutant_zombie_grab","path":"sprites/spr_mutant_zombie_grab/spr_mutant_zombie_grab.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_mutant_zombie_grab",
     "tags": [],
     "resourceType": "GMSequence",
@@ -122,7 +122,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
-    "path": "folders/Sounds/Sprites.yy",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_mutant_zombie_grab",

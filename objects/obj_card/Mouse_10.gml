@@ -1,9 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-<<<<<<< Updated upstream
-image_xscale=2
-image_yscale=2
-=======
 if(player_owner="me" && global.game_mode = "multiplayer"){
 	hovered=true;
 	if(obj_client.connected){
@@ -20,4 +16,3 @@ if(player_owner="me" && global.game_mode = "multiplayer"){
 image_xscale*=2
 image_yscale*=2
 */
->>>>>>> Stashed changes

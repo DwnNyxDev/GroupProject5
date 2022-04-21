@@ -1,7 +1,4 @@
 //if on battlefield and you have enough
-<<<<<<< Updated upstream
-	instance_create_depth(instance_nearest(mouse_x,mouse_y,obj_space).x,instance_nearest(mouse_x,mouse_y,obj_space).y,-2,card_object);
-=======
 if(player_owner="me" && global.game_mode = "multiplayer"){
 	if(room=rm_battleground){
 		closest_space = instance_nearest(mouse_x,1800,obj_space);
@@ -17,27 +14,18 @@ if(player_owner="me" && global.game_mode = "multiplayer"){
 				network_send_packet(obj_client.client_socket,buffer,buffer_tell(buffer));
 				buffer_delete(buffer);
 			}
-		}
-	}
-}
-else if(player_owner="me" && global.game_mode != "multiplayer"){
-	if(room=rm_battleground){
-		closest_space = instance_nearest(mouse_x,1800,obj_space);
-		if(distance_to_object(closest_space)<40 && hovering && !closest_space.occupying){
-			closest_space.occupying = true;
+      closest_space.occupying = true;
 			new_soldier = instance_create_depth(closest_space.x,closest_space.y,-2,obj_soldier);
 			new_soldier.sprite_index=get_sprite_from_card_name(card_name,"soldier");
 			new_soldier.player_owner=player_owner;
 			ds_list_delete(deck_owner.hand,ds_list_find_index(deck_owner.hand,id));
 			instance_destroy();
-		}
-		else{
+    else{
 			y=startY;
 			moving=false;
 		}
-	}
+  }
 }
-//}
->>>>>>> Stashed changes
+}
 	//make cost go down
 //}

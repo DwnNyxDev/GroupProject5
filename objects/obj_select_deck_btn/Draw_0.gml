@@ -83,6 +83,10 @@ else if(num_types==1){
 		draw_sprite(spr_beast_card_back,0,x,y);
 	}
 }
+else{
+	draw_sprite(spr_human_card_back,0,x,y);
+}
 draw_set_halign(fa_center);
-draw_set_font(fnt_endor);
-draw_text_outlined(x,bbox_bottom+35,3,c_black,c_aqua,deck_name);
+draw_set_valign(-1);
+draw_set_font(fnt_arial20);
+draw_text(x,bbox_bottom+35,ds_map_find_value(deck_map,"name")+"\n"+string(ds_list_size(ds_map_find_value(deck_map,"card_list")))+"/60");

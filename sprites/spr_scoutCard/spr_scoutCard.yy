@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_scoutCard","path":"sprites/spr_scoutCard/spr_scoutCard.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_scoutCard",
     "tags": [],
     "resourceType": "GMSequence",
@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "cards",
-    "path": "folders/Sounds/Sprites/cards.yy",
+    "path": "folders/Sprites/cards.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_scoutCard",

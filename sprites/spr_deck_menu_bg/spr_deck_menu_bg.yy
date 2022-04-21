@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_deck_menu_bg","path":"sprites/spr_deck_menu_bg/spr_deck_menu_bg.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_deck_menu_bg",
     "tags": [],
     "resourceType": "GMSequence",
@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "menu_bgs",
-    "path": "folders/Sounds/Sprites/menu_bgs.yy",
+    "path": "folders/Sprites/menu_bgs.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_deck_menu_bg",
