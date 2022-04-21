@@ -1,9 +1,9 @@
 //if on battlefield and you have enough
-if(player_owner="me" && global.game_mode = "multiplayer"){
+if(player_owner="me"){
 	if(room=rm_battleground){
 		closest_space = instance_nearest(mouse_x,1800,obj_space);
 		if(distance_to_object(closest_space)<40 && hovered && !closest_space.occupying){
-			if(obj_client.connected){
+			if(global.game_mode = "multiplayer"&&obj_client.connected){
 				var buffer = buffer_create(256,buffer_grow,1);
 				buffer_seek(buffer,buffer_seek_start,0);
 				buffer_write(buffer,buffer_string,"soldier_created");
