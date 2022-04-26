@@ -17,8 +17,8 @@ if(selected){
 				buffer_seek(buffer,buffer_seek_start,0);
 				buffer_write(buffer,buffer_string,"soldier_move");
 				buffer_write(buffer,buffer_u16,move_index);
-				buffer_write(buffer,buffer_u16,closest_space.x);
-				buffer_write(buffer,buffer_u16,closest_space.y);
+				buffer_write(buffer,buffer_u16,current.x);
+				buffer_write(buffer,buffer_u16,current.y);
 				buffer_write(buffer,buffer_u16,potential.x);
 				buffer_write(buffer,buffer_u16,potential.y);
 				network_send_packet(obj_client.client_socket,buffer,buffer_tell(buffer));
@@ -55,8 +55,8 @@ if(selected){
 				buffer_seek(buffer,buffer_seek_start,0);
 				buffer_write(buffer,buffer_string,"soldier_move");
 				buffer_write(buffer,buffer_u16,move_index);
-				buffer_write(buffer,buffer_u16,closest_space.x);
-				buffer_write(buffer,buffer_u16,closest_space.y);
+				buffer_write(buffer,buffer_u16,current.x);
+				buffer_write(buffer,buffer_u16,current.y);
 				buffer_write(buffer,buffer_u16,potential.x);
 				buffer_write(buffer,buffer_u16,potential.y);
 				network_send_packet(obj_client.client_socket,buffer,buffer_tell(buffer));
@@ -78,8 +78,8 @@ if(selected){
 				buffer_seek(buffer,buffer_seek_start,0);
 				buffer_write(buffer,buffer_string,"soldier_move");
 				buffer_write(buffer,buffer_u16,move_index);
-				buffer_write(buffer,buffer_u16,closest_space.x);
-				buffer_write(buffer,buffer_u16,closest_space.y);
+				buffer_write(buffer,buffer_u16,current.x);
+				buffer_write(buffer,buffer_u16,current.y);
 				buffer_write(buffer,buffer_u16,potential.x);
 				buffer_write(buffer,buffer_u16,potential.y);
 				network_send_packet(obj_client.client_socket,buffer,buffer_tell(buffer));
@@ -101,8 +101,8 @@ if(selected){
 				buffer_seek(buffer,buffer_seek_start,0);
 				buffer_write(buffer,buffer_string,"soldier_move");
 				buffer_write(buffer,buffer_u16,move_index);
-				buffer_write(buffer,buffer_u16,closest_space.x);
-				buffer_write(buffer,buffer_u16,closest_space.y);
+				buffer_write(buffer,buffer_u16,current.x);
+				buffer_write(buffer,buffer_u16,current.y);
 				buffer_write(buffer,buffer_u16,potential.x);
 				buffer_write(buffer,buffer_u16,potential.y);
 				network_send_packet(obj_client.client_socket,buffer,buffer_tell(buffer));
