@@ -77,6 +77,18 @@ else if(e_type = network_type_data){
 					//mouse y (to find closest space)
 					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
 				}
+				else if(b_type="soldier_move"){
+					//soldier move index
+					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
+					//soldier curr x
+					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
+					//soldier curr y
+					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
+					//soldier new x
+					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
+					//soldier new y
+					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
+				}
 				network_send_packet(client_socket,buffer,buffer_tell(buffer));
 				buffer_delete(buffer);
 				break;

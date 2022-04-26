@@ -6,15 +6,13 @@ if(ds_exists(async_load,ds_type_map)){
 		var read_buffer = ds_map_find_value(async_load,"buffer");
 		buffer_seek(read_buffer,buffer_seek_start,0);
 		var host_name = buffer_read(read_buffer,buffer_string);
-		temp_join_btn = instance_create_layer(0,room_height*.3+(room_height*.1)*(ds_list_size(join_btns)),"Instances",obj_room_join_btn);
-		temp_join_btn.host_name = host_name;
-		temp_join_btn.host_ip = server_ip;
-		ds_list_add(join_btns,temp_join_btn);
 		already_made=false;
 		for(i=0; i<ds_list_size(join_btns); i++){
 			prev_btn = ds_list_find_value(join_btns,i);
 			if(prev_btn.host_ip==server_ip){
+				show_debug_message("btn_ip: "+string(prev_btn.host_ip)+" server_ip: "+string(server_ip));
 				already_made=true;
+				break;
 			}
 		}
 		if(!already_made){
@@ -60,7 +58,7 @@ if(ds_exists(async_load,ds_type_map)){
 				global.game_mode="multiplayer";
 				room_goto(rm_battleground);
 			}
-			else if(b_type="card_hovered"||b_type="card_unhovered"||b_type="soldier_created"){
+			else if(b_type="card_hovered"||b_type="card_unhovered"||b_type="soldier_created"||b_type="soldier_move"){
 				var b_sender = buffer_read(read_buffer,buffer_string);
 				if(b_sender!=obj_client.c_type){
 					card_index_in_hand = buffer_read(read_buffer,buffer_u8);
@@ -85,6 +83,8 @@ if(ds_exists(async_load,ds_type_map)){
 									new_soldier = instance_create_depth(closest_space.x,closest_space.y,-2,obj_soldier);
 									new_soldier.sprite_index=get_sprite_from_card_name(card.card_name,"soldier");
 									new_soldier.player_owner=player_owner;
+									closest_space.enemyOccupying=true;
+									closest_space.currentTroop=new_soldier;
 									ds_list_delete(hand,other.card_index_in_hand);
 									instance_destroy(card);
 								}
@@ -100,6 +100,21 @@ if(ds_exists(async_load,ds_type_map)){
 						if(player_owner="enemy"){
 							event_perform(ev_mouse,ev_left_press);
 						}
+					}
+				}
+			}
+			else if(b_type="soldier_move"){
+				var b_sender = buffer_read(read_buffer,buffer_string);
+				if(b_sender!=obj_client.c_type){
+					move_index = buffer_read(read_buffer,buffer_u16);
+					soldier_x = buffer_read(read_buffer,buffer_u16);
+					soldier_y = buffer_read(read_buffer,buffer_u16);
+					soldier = instance_nearest(986-(soldier_x-336),274-(soldier_y-490),obj_space).currentTroop;
+					if(move_index>soldier.move_index){
+						new_soldier_x = buffer_read(read_buffer,buffer_u16);
+						new_soldier_y = buffer_read(read_buffer,buffer_u16);
+						soldier.x=986-(new_soldier_x-336);
+						soldier.y=274-(new_soldier_y-490);
 					}
 				}
 			}
