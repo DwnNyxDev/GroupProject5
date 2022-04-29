@@ -50,9 +50,10 @@ decks_created = ds_list_create();
 deck_selector_xOffset = 0;
 deck_editor_index=0;
 deck_editor_card_groups = ds_list_create();
-
 global.temp_deck = ds_list_create();
 global.hand = ds_list_create();
 global.game_mode="singleplayer";
 global.client_socket=noone;
-
+global.playerPoints = 0;
+global.enemyPoints	= 0;
+global.myTurn = false;

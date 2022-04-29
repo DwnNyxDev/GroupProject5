@@ -1,12 +1,3 @@
-left = instance_nearest(x-100,y,obj_space);
-up = instance_nearest(x,y-70,obj_space);
-right = instance_nearest(x+100,y,obj_space);
-down = instance_nearest(x,y+70,obj_space);
-upLeft = instance_nearest(x-100,y-70,obj_space);
-upRight = instance_nearest(x+100,y-70,obj_space);
-downLeft = instance_nearest(x-100,y+70,obj_space);
-downRight = instance_nearest(x+100,y+70,obj_space);
-
 global.phase = 0;
 occupying = false;
 currentTroop = noone;
@@ -16,4 +7,30 @@ currentTroop2 = noone;
 currentTroop3 = noone;
 currentTroop4 = noone;
 currentTroop5 = noone;
-
+zone = false;
+counted = false;
+double = false;
+single = false;
+half = false;
+randomm = false;
+temp = false;
+randVal = 0;
+if(y == 376){
+	zone = true;
+}
+if(x == 352){
+	half = true;
+}
+else if(x == 520){
+	single = true;
+}
+else if(x == 680){
+	double = true;
+}
+else if(x == 848){
+	randomm = true;
+	randVal = random_range(0,5);
+}
+else{
+	temp = true;
+}

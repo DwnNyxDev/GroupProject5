@@ -3,12 +3,15 @@
 if(name!=noone){
 	sprite_index=get_sprite_from_card_name(name,"soldier");
 }
-if(global.phase == 1){
+if(global.phase == 0){
+	global.myTurn = !global.myTurn;
+}
+if(global.phase == 1 && global.myTurn){
 	upMoves = startingUpMoves;
 	leftMoves = startingLeftMoves;
 	selected = false;
 }
-if(selected){
+if(selected && global.myTurn && global.phase == 2){
 	if(keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A"))){
 		potential = instance_nearest(x-160,y,obj_space);
 		if(leftMoves > 0 && !potential.occupying){
