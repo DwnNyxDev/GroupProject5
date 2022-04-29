@@ -58,7 +58,7 @@ if(ds_exists(async_load,ds_type_map)){
 				global.game_mode="multiplayer";
 				room_goto(rm_battleground);
 			}
-			else if(b_type="card_hovered"||b_type="card_unhovered"||b_type="soldier_created"||b_type="soldier_move"){
+			else if(b_type="card_hovered"||b_type="card_unhovered"||b_type="soldier_created"){
 				var b_sender = buffer_read(read_buffer,buffer_string);
 				if(b_sender!=obj_client.c_type){
 					card_index_in_hand = buffer_read(read_buffer,buffer_u8);
@@ -107,15 +107,20 @@ if(ds_exists(async_load,ds_type_map)){
 				show_debug_message("recieved messaged");
 				var b_sender = buffer_read(read_buffer,buffer_string);
 				if(b_sender!=obj_client.c_type){
+					show_debug_message("client_type is right");
 					move_index = buffer_read(read_buffer,buffer_u16);
 					soldier_x = buffer_read(read_buffer,buffer_u16);
 					soldier_y = buffer_read(read_buffer,buffer_u16);
 					soldier = instance_nearest(986-(soldier_x-336),274-(soldier_y-490),obj_space).currentTroop;
-					if(move_index>soldier.move_index){
-						new_soldier_x = buffer_read(read_buffer,buffer_u16);
-						new_soldier_y = buffer_read(read_buffer,buffer_u16);
-						soldier.x=986-(new_soldier_x-336);
-						soldier.y=274-(new_soldier_y-490);
+					if(is_undefined(soldier)){
+						if(move_index>soldier.move_index){
+							show_debug_message("setting that mf x and y value");
+							new_soldier_x = buffer_read(read_buffer,buffer_u16);
+							new_soldier_y = buffer_read(read_buffer,buffer_u16);
+							soldier.x=986-(new_soldier_x-336);
+							soldier.y=274-(new_soldier_y-490);
+							soldier.move_index++;
+						}
 					}
 				}
 			}
