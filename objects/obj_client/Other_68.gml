@@ -113,7 +113,7 @@ if(ds_exists(async_load,ds_type_map)){
 					soldier_y = buffer_read(read_buffer,buffer_u16);
 					soldier_space = instance_nearest(986-(soldier_x-336),274-(soldier_y-490),obj_space);
 					soldier = soldier_space.currentTroop;
-					if(!is_undefined(soldier)){
+					if(instance_exists(soldier)){
 						if(move_index>soldier.move_index){
 							show_debug_message("setting that mf x and y value");
 							new_soldier_x = buffer_read(read_buffer,buffer_u16);
