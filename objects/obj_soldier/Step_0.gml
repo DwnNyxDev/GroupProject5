@@ -16,6 +16,7 @@ if(selected){
 				var buffer = buffer_create(256,buffer_grow,1);
 				buffer_seek(buffer,buffer_seek_start,0);
 				buffer_write(buffer,buffer_string,"soldier_move");
+				buffer_write(buffer,buffer_string,obj_client.c_type);
 				buffer_write(buffer,buffer_u16,move_index);
 				buffer_write(buffer,buffer_u16,current.x);
 				buffer_write(buffer,buffer_u16,current.y);
@@ -54,6 +55,7 @@ if(selected){
 				var buffer = buffer_create(256,buffer_grow,1);
 				buffer_seek(buffer,buffer_seek_start,0);
 				buffer_write(buffer,buffer_string,"soldier_move");
+				buffer_write(buffer,buffer_string,obj_client.c_type);
 				buffer_write(buffer,buffer_u16,move_index);
 				buffer_write(buffer,buffer_u16,current.x);
 				buffer_write(buffer,buffer_u16,current.y);
@@ -77,6 +79,7 @@ if(selected){
 				var buffer = buffer_create(256,buffer_grow,1);
 				buffer_seek(buffer,buffer_seek_start,0);
 				buffer_write(buffer,buffer_string,"soldier_move");
+				buffer_write(buffer,buffer_string,obj_client.c_type);
 				buffer_write(buffer,buffer_u16,move_index);
 				buffer_write(buffer,buffer_u16,current.x);
 				buffer_write(buffer,buffer_u16,current.y);
@@ -100,6 +103,7 @@ if(selected){
 				var buffer = buffer_create(256,buffer_grow,1);
 				buffer_seek(buffer,buffer_seek_start,0);
 				buffer_write(buffer,buffer_string,"soldier_move");
+				buffer_write(buffer,buffer_string,obj_client.c_type);
 				buffer_write(buffer,buffer_u16,move_index);
 				buffer_write(buffer,buffer_u16,current.x);
 				buffer_write(buffer,buffer_u16,current.y);
