@@ -47,7 +47,7 @@ else if(e_type = network_type_data){
 			}
 		}
 	}
-	else if(b_type="card_hovered"||b_type="card_unhovered"||b_type="soldier_created"||b_type="draw_card"){
+	else if(b_type="card_hovered"||b_type="card_unhovered"||b_type="soldier_created"||b_type="draw_card"||b_type="soldier_move"){
 		buffers_received++;
 		show_debug_message("buffers received: "+string(buffers_received));
 		e_socket = ds_map_find_value(async_load,"socket");

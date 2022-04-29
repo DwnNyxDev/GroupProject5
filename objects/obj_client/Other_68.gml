@@ -104,6 +104,7 @@ if(ds_exists(async_load,ds_type_map)){
 				}
 			}
 			else if(b_type="soldier_move"){
+				show_debug_message("recieved messaged");
 				var b_sender = buffer_read(read_buffer,buffer_string);
 				if(b_sender!=obj_client.c_type){
 					move_index = buffer_read(read_buffer,buffer_u16);
