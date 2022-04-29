@@ -12,6 +12,7 @@ if(selected){
 	if(keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A"))){
 		potential = instance_nearest(x-160,y,obj_space);
 		if(horMoves > 0 && !potential.occupying){
+			move_index++;
 			if(global.game_mode = "multiplayer"&&obj_client.connected){
 				var buffer = buffer_create(256,buffer_grow,1);
 				buffer_seek(buffer,buffer_seek_start,0);
@@ -30,7 +31,6 @@ if(selected){
 			current = potential;
 			x = potential.x;
 			horMoves--;
-			move_index++;
 		}
 		else if(potential.occupying){
 			enemy = potential.currentTroop
@@ -51,6 +51,7 @@ if(selected){
 	if(keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D"))){
 		potential = instance_nearest(x+160,y,obj_space);
 		if(horMoves > 0 && !potential.occupying){
+			move_index++;
 			if(global.game_mode = "multiplayer"&&obj_client.connected){
 				var buffer = buffer_create(256,buffer_grow,1);
 				buffer_seek(buffer,buffer_seek_start,0);
@@ -69,12 +70,12 @@ if(selected){
 			current = potential;
 			x = potential.x;
 			horMoves--;
-			move_index++;
 		}
 	}
 	if(keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))){
 		potential = instance_nearest(x,y-80,obj_space);
 		if(vertMoves > 0 && !potential.occupying){
+			move_index++;
 			if(global.game_mode = "multiplayer"&&obj_client.connected){
 				var buffer = buffer_create(256,buffer_grow,1);
 				buffer_seek(buffer,buffer_seek_start,0);
@@ -93,12 +94,12 @@ if(selected){
 			current = potential;
 			y = potential.y;
 			vertMoves--;
-			move_index++;
 		}
 	}
 	if(keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))){
 		potential = instance_nearest(x,y+80,obj_space);
 		if(vertMoves > 0 && !potential.occupying){
+			move_index++;
 			if(global.game_mode = "multiplayer"&&obj_client.connected){
 				var buffer = buffer_create(256,buffer_grow,1);
 				buffer_seek(buffer,buffer_seek_start,0);
@@ -117,7 +118,6 @@ if(selected){
 			current = potential;
 			y = potential.y;
 			vertMoves--;
-			move_index++;
 		}
 	}
 }
