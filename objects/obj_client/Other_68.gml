@@ -111,17 +111,19 @@ if(ds_exists(async_load,ds_type_map)){
 					move_index = buffer_read(read_buffer,buffer_u16);
 					soldier_x = buffer_read(read_buffer,buffer_u16);
 					soldier_y = buffer_read(read_buffer,buffer_u16);
-					soldier_space = instance_nearest(986-(soldier_x-336),274-(soldier_y-490),obj_space);
-					soldier = soldier_space.currentTroop;
+					new_soldier_x = buffer_read(read_buffer,buffer_u16);
+					new_soldier_y = buffer_read(read_buffer,buffer_u16);
+					old_soldier_space = instance_nearest(986-(soldier_x-336),274-(soldier_y-490),obj_space);
+					new_soldier_space = instance_nearest(986-(new_soldier_x-336),274-(new_soldier_y-490),obj_space);
+					soldier = old_soldier_space.currentTroop;
 					if(instance_exists(soldier)){
 						if(move_index>soldier.move_index){
 							show_debug_message("setting that mf x and y value");
-							new_soldier_x = buffer_read(read_buffer,buffer_u16);
-							new_soldier_y = buffer_read(read_buffer,buffer_u16);
-							soldier.x=986-(new_soldier_x-336);
-							soldier.y=274-(new_soldier_y-490);
+							soldier.x=new_soldier_space.x;
+							soldier.y=new_soldier_space.y;
 							soldier.move_index++;
-							soldier_space.currentTroop=noone;
+							old_soldier_space.currentTroop=noone;
+							new_soldier_space.currentTroop=soldier;
 						}
 						else{
 							show_debug_message("move index error? no way?");
