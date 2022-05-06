@@ -2,7 +2,7 @@
 if(player_owner="me"){
 	if(room=rm_battleground){
 		closest_space = instance_nearest(mouse_x,1800,obj_space);
-		if(distance_to_object(closest_space)<40 && hovered && !closest_space.occupying){
+		if(distance_to_object(closest_space)<40 && hovered && !closest_space.occupying && card_cost <= global.money){
 			if(global.game_mode = "multiplayer"&&obj_client.connected){
 				var buffer = buffer_create(256,buffer_grow,1);
 				buffer_seek(buffer,buffer_seek_start,0);
@@ -22,6 +22,7 @@ if(player_owner="me"){
 			closest_space.currentTroop = new_soldier;
 			ds_list_delete(deck_owner.hand,ds_list_find_index(deck_owner.hand,id));
 			instance_destroy();
+			global.money -= card_cost;
 		}
 		else{
 			y=startY;
