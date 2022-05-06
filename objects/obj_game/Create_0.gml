@@ -6,7 +6,8 @@ global.deck_index = 0;
 global.card_inventory = ds_list_create();
 decks_created = ds_list_create();
 global.selected_deck=noone;
-global.money = 0;
+global.money = 1;
+counted = false;
 newMoney = 1;
 global.phase = 0;//0=start,1=discard,2=play,3=combat,4=end
 global.movingTroop = false;
@@ -17,10 +18,10 @@ global.gold = 60000;
 ini_open("saveData.ini");
 global.player_name = ini_read_string("Variables","player_name",noone);
 last_shop_reset = ini_read_real("Variables","last_shop_reset",0);
-card_display = ini_read_real("Variables","card_display",spr_babybowman);
+card_display = 
+ini_read_real("Variables","card_display",spr_babybowman);
 card_display2 = ini_read_real("Variables","card_display2",spr_babyspear);
 card_display3 = ini_read_real("Variables", "card_display3", spr_goblin_sword);
-
 num_decks = ini_read_string("Variables","num_decks",0)
 card_inv_string = ini_read_string("Variables","card_inventory","none");
 if(card_inv_string!="none"){

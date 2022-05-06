@@ -47,7 +47,7 @@ else if(e_type = network_type_data){
 			}
 		}
 	}
-	else if(b_type="card_hovered"||b_type="card_unhovered"||b_type="soldier_created"||b_type="draw_card"){
+	else if(b_type="card_hovered"||b_type="card_unhovered"||b_type="soldier_created"||b_type="draw_card"||b_type="soldier_move"){
 		buffers_received++;
 		show_debug_message("buffers received: "+string(buffers_received));
 		e_socket = ds_map_find_value(async_load,"socket");
@@ -75,6 +75,18 @@ else if(e_type = network_type_data){
 					//mouse x (to find closest space)
 					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
 					//mouse y (to find closest space)
+					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
+				}
+				else if(b_type="soldier_move"){
+					//soldier move index
+					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
+					//soldier curr x
+					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
+					//soldier curr y
+					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
+					//soldier new x
+					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
+					//soldier new y
 					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
 				}
 				network_send_packet(client_socket,buffer,buffer_tell(buffer));

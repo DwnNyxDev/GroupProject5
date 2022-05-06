@@ -1,11 +1,13 @@
 
 if(keyboard_check_pressed(vk_space)){
 	global.phase++;
-	if(global.phase==0){
-		global.money += newMoney;
-	}
+}
+if(global.phase==0 && !counted){
+	global.money += newMoney;
+	counted = true;
 }
 if(global.phase >= 5){
+	counted = false;
 	global.phase = 0;
 	totalTurns ++;
 }
@@ -33,7 +35,7 @@ else if(room=rm_menu){
 		menu_selected_index++;
 		ds_list_find_value(menus,menu_selected_index).selected=true;
 	}
-	else{
+	else{	
 		selected_menu = ds_list_find_value(menus,menu_selected_index);
 		if(selected_menu.x<room_width/2-25||selected_menu.x>room_width/2+25){
 			increment = sign(room_width/2-selected_menu.x)*25
