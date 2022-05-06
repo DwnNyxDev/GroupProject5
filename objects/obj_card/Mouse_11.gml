@@ -1,7 +1,11 @@
+<<<<<<< Updated upstream
 /// @description Insert description here
 // You can write your code in this editor
 
 if(player_owner="me" && global.game_mode = "multiplayer"){
+=======
+if(player_owner="me"){
+>>>>>>> Stashed changes
 	hovered=false;
 	glow_opacity=0;
 	glow_dimmer=false;

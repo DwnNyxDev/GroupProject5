@@ -2,8 +2,13 @@
 if(player_owner="me" && global.game_mode = "multiplayer"){
 	if(room=rm_battleground){
 		closest_space = instance_nearest(mouse_x,1800,obj_space);
+<<<<<<< Updated upstream
 		if(distance_to_object(closest_space)<40 && hovered && !closest_space.occupying){
 			if(obj_client.connected){
+=======
+		if(distance_to_object(closest_space)<40 && hovered && !closest_space.occupying && card_cost <= global.money){
+			if(global.game_mode = "multiplayer"&&obj_client.connected){
+>>>>>>> Stashed changes
 				var buffer = buffer_create(256,buffer_grow,1);
 				buffer_seek(buffer,buffer_seek_start,0);
 				buffer_write(buffer,buffer_string,"soldier_created");
@@ -20,7 +25,13 @@ if(player_owner="me" && global.game_mode = "multiplayer"){
 			new_soldier.player_owner=player_owner;
 			ds_list_delete(deck_owner.hand,ds_list_find_index(deck_owner.hand,id));
 			instance_destroy();
+<<<<<<< Updated upstream
     else{
+=======
+			global.money -= card_cost;
+		}
+		else{
+>>>>>>> Stashed changes
 			y=startY;
 			moving=false;
 		}
