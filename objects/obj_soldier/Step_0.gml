@@ -41,14 +41,41 @@ if(selected && global.myTurn && global.phase == 2){
 				enemy.defense -= attack;
 				if(enemy.defense <= 0){
 					instance_destroy(enemy);
+					if(global.game_mode = "multiplayer"&&obj_client.connected){
+						var buffer = buffer_create(256,buffer_grow,1);
+						buffer_seek(buffer,buffer_seek_start,0);
+						buffer_write(buffer,buffer_string,"soldier_destroyed");
+						buffer_write(buffer,buffer_string,obj_client.c_type);
+						buffer_write(buffer,buffer_u16,move_index);
+						buffer_write(buffer,buffer_u16,current.x);
+						buffer_write(buffer,buffer_u16,current.y);
+						buffer_write(buffer,buffer_u16,potential.x);
+						buffer_write(buffer,buffer_u16,potential.y);
+						network_send_packet(obj_client.client_socket,buffer,buffer_tell(buffer));
+						buffer_delete(buffer);
+					}
 				}
 				else{
 					defense -= enemy.attack;
 				}
 				if(defense <= 0){
 					instance_destroy();
+					if(global.game_mode = "multiplayer"&&obj_client.connected){
+						var buffer = buffer_create(256,buffer_grow,1);
+						buffer_seek(buffer,buffer_seek_start,0);
+						buffer_write(buffer,buffer_string,"enemy_soldier_destroyed");
+						buffer_write(buffer,buffer_string,obj_client.c_type);
+						buffer_write(buffer,buffer_u16,move_index);
+						buffer_write(buffer,buffer_u16,current.x);
+						buffer_write(buffer,buffer_u16,current.y);
+						buffer_write(buffer,buffer_u16,potential.x);
+						buffer_write(buffer,buffer_u16,potential.y);
+						network_send_packet(obj_client.client_socket,buffer,buffer_tell(buffer));
+						buffer_delete(buffer);
+					}
 				}
 			}
+			
 		}
 	}
 	if(keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D"))){

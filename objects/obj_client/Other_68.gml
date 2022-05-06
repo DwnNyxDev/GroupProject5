@@ -118,16 +118,64 @@ if(ds_exists(async_load,ds_type_map)){
 					soldier = old_soldier_space.currentTroop;
 					if(instance_exists(soldier)){
 						if(move_index>soldier.move_index){
-							show_debug_message("setting that mf x and y value");
 							soldier.x=new_soldier_space.x;
 							soldier.y=new_soldier_space.y;
 							soldier.move_index++;
 							old_soldier_space.currentTroop=noone;
 							new_soldier_space.currentTroop=soldier;
+							new_soldier_space.enemyOccupying=true;
 						}
-						else{
-							show_debug_message("move index error? no way?");
+					}
+					else{
+						show_debug_message("soldier unrefined");
+					}
+				}
+			}
+			else if(b_type="soldier_destroyed"){
+				show_debug_message("recieved messaged");
+				var b_sender = buffer_read(read_buffer,buffer_string);
+				if(b_sender!=obj_client.c_type){
+					show_debug_message("client_type is right");
+					move_index = buffer_read(read_buffer,buffer_u16);
+					soldier_x = buffer_read(read_buffer,buffer_u16);
+					soldier_y = buffer_read(read_buffer,buffer_u16);
+					new_soldier_x = buffer_read(read_buffer,buffer_u16);
+					new_soldier_y = buffer_read(read_buffer,buffer_u16);
+					old_soldier_space = instance_nearest(986-(soldier_x-336),274-(soldier_y-490),obj_space);
+					new_soldier_space = instance_nearest(986-(new_soldier_x-336),274-(new_soldier_y-490),obj_space);
+					enemy_soldier = old_soldier_space.currentTroop;
+					dead_soldier = new_soldier_space.currentTroop;
+					if(instance_exists(dead_soldier)){
+						instance_destroy(dead_soldier);
+						if(instance_exists(enemy_soldier)){
+							enemy_soldier.x=new_soldier_space.x;
+							enemy_soldier.y=new_soldier_space.y;
+							new_soldier_space.enemyOccupying=true;
 						}
+					}
+					else{
+						show_debug_message("soldier unrefined");
+					}
+				}
+			}
+			else if(b_type="enemy_soldier_destroyed"){
+				show_debug_message("recieved messaged");
+				var b_sender = buffer_read(read_buffer,buffer_string);
+				if(b_sender!=obj_client.c_type){
+					show_debug_message("client_type is right");
+					move_index = buffer_read(read_buffer,buffer_u16);
+					soldier_x = buffer_read(read_buffer,buffer_u16);
+					soldier_y = buffer_read(read_buffer,buffer_u16);
+					new_soldier_x = buffer_read(read_buffer,buffer_u16);
+					new_soldier_y = buffer_read(read_buffer,buffer_u16);
+					old_soldier_space = instance_nearest(986-(soldier_x-336),274-(soldier_y-490),obj_space);
+					new_soldier_space = instance_nearest(986-(new_soldier_x-336),274-(new_soldier_y-490),obj_space);
+					enemy_soldier = old_soldier_space.currentTroop;
+					my_soldier = new_soldier_space.currentTroop;
+					if(instance_exists(enemy_soldier)){
+						instance_destroy(enemy_soldier);
+						old_soldier_space.enemyOccupying=false;
+						old_soldier_space.occupying=false;
 					}
 					else{
 						show_debug_message("soldier unrefined");

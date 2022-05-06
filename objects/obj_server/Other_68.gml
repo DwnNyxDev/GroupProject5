@@ -77,7 +77,7 @@ else if(e_type = network_type_data){
 					//mouse y (to find closest space)
 					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
 				}
-				else if(b_type="soldier_move"){
+				else if(b_type="soldier_move"||b_type="soldier_destroyed"||b_type="enemy_soldier_destroyed"){
 					//soldier move index
 					buffer_write(buffer,buffer_u16,buffer_read(read_buffer,buffer_u16));
 					//soldier curr x
