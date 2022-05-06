@@ -1,9 +1,6 @@
 if(room == rm_battleground){
 	draw_text(100,100,global.phase);
-<<<<<<< Updated upstream
-=======
 	draw_text(100,150,global.money);
->>>>>>> Stashed changes
 }
 else if(room == rm_store){
 	draw_sprite(spr_goldCoin,0,room_width*0.05,room_height*0.1);
