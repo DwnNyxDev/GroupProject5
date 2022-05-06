@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(ds_list_size(hand)<6){
+if(ds_list_size(hand)<6&&global.phase==0){
 	if(player_owner="me"){
 		new_card = instance_create_layer(start_x+(sprite_get_width(spr_archerCard)/2)*5,y,"Instances",obj_card);
 		if(obj_client.connected){
